@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epc="http://eprints.org/ep3/control">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+      <epc:pin ref="title" textonly="yes" />
+      -
+      <epc:phrase ref="archive_name" />
+    </title>
+    <link rel="icon" href="{$config{rel_path}}/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="{$config{rel_path}}/favicon.ico" type="image/x-icon" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" />
+    <epc:pin ref="head" />
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Modernizr -->
+    <script src="{$config{rel_path}}/roar_template/Scripts/modernizr.js" />
+
+    <!-- UEL styles -->
+    <link href="{$config{rel_path}}/roar_template/Styles/main.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/roar_template/Styles/webfonts.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/roar_template/Styles/search.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/roar_template/Styles/UEL.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/roar_template/Styles/recollect_overrides.css" rel="stylesheet" />
+
+    <style type="text/css">
+	/* Style from phrases */
+	.btn-docklands {
+		background-color: #<epc:phrase ref="docklands_colour_1"/>;
+		color: #fff;
+		border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important;
+	}
+	.btn-docklands:hover {
+                background-color: #<epc:phrase ref="docklands_colour_2"/>!important;
+                color: #fff;
+        }
+	.trim {
+		border-color: #<epc:phrase ref="docklands_colour_1"/>;
+	}
+	.shadow {box-shadow: 0 0 <epc:phrase ref="docklands_shadows"/>px rgba(0, 0, 0, 0.2);}	
+	.border {border: <epc:phrase ref="docklands_border_thick"/>px solid #<epc:phrase ref="docklands_colour_1"/>!important; border-radius: <epc:phrase ref="docklands_border_radius"/>px}
+	.ep_tm_footer {border-color: #<epc:phrase ref="docklands_colour_2"/>;!important;}
+	.nav-pills li a {border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important;}
+	#search_box input {border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important;}
+
+	#file_aside div.rd_citation_right {box-shadow: -<epc:phrase ref="docklands_shadows"/>px 0px 10px -7px rgba(0,0,0,0.5); border: <epc:phrase ref="docklands_border_thick"/>px solid #<epc:phrase ref="docklands_colour_1"/>!important;}
+	#page h1 {background-color: #<epc:phrase ref="docklands_colour_1"/>!important; border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important;}
+    </style>
+
+   
+		
+  </head>
+  <body>
+    <epc:pin ref="pagetop" />
+
+<header>
+	<nav class="off-canvas-wrapper" id="off-canvas-wrapper">
+		<section class="header-top-nav-container spa-full-width clearfix">
+			<div class="header-top-nav clearfix">
+				<ul>
+					<li class="mobile-hidden normal-element"><a href="/">UEL Home</a></li>
+					<li class="mobile-hidden normal-element"><a href="/staff/">Staff</a></li>
+					<li class="mobile-hidden normal-element"><a href="/Students/">Students</a></li>
+					<li class="mobile-hidden normal-element"><a href="/contactus/">Contact Us</a></li>
+					<li class="top-search-area">
+						<div id="input-medium search-query placeholder-poly">
+							<div class="gsc-control-searchbox-only gsc-control-searchbox-only-en_GB" dir="ltr">
+								<form accept-charset="utf-8" class="gsc-search-box">
+									<table cellpadding="0" cellspacing="0" class="gsc-search-box">
+										<tbody>
+											<tr>
+												<td class="gsc-input"><input autocomplete="off" class=" gsc-input" dir="ltr" id="gsc-i-id1" name="search" placeholder="Site search" size="10" spellcheck="false" style="outline: none;" title="search" type="text" /></td>
+												<td class="gsc-search-button"><input class="gsc-search-button" title="search" type="button" value="Search" /></td>
+												<td class="gsc-clear-button">
+													<div class="gsc-clear-button" title="clear results">
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table cellpadding="0" cellspacing="0" class="gsc-branding">
+										<tbody>
+											<tr style="display: none;">
+												<td class="gsc-branding-user-defined"></td>
+
+												<td class="gsc-branding-text">
+													<div class="gsc-branding-text">
+														powered by
+													</div>
+												</td>
+
+												<td class="gsc-branding-img"><img class="gsc-branding-img" src="http://www.google.com/uds/css/small-logo.png" /></td>
+											</tr>
+										</tbody>
+									</table>
+								</form>
+							</div>
+						</div>
+					</li>
+
+					<li class="mobile-hidden social-icons-container">
+						<ul class="clearfix">
+						 <li class="clearfix"><a href="https://www.facebook.com/universityofeastlondon"><img alt="facebook" src="/wwwmedia/uel2014/img/social-icons/facebook-top.png" /></a></li>
+ 						 <li class="clearfix"><a href="http://www.youtube.com/user/videouel"><img alt="youtube" src="/wwwmedia/uel2014/img/social-icons/youtube-top.png" /></a></li>
+						 <li class="clearfix"><a href="https://twitter.com/uel_news"><img alt="twitter" src="/wwwmedia/uel2014/img/social-icons/twitter-top.png" /></a></li>
+						 <li class="clearfix"><a href="https://plus.google.com/+universityofeastlondon/posts"><img alt="google+" src="/wwwmedia/uel2014/img/social-icons/google-top.png" /></a></li>
+						</ul>
+					</li>
+					<li class="mobile-hidden contact-number"><a href="tel:+44%20(0)20%208223%203000">+44 (0)20 8223 3333</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="main-nav-container clearfix">
+			<nav class="main-nav">
+				<div class="cont" id="js-main-nav-container">
+					<div class="logo-wrapper">
+						<a href="/"><img src="/wwwmedia/uel2014/img/uel-logo.png" /></a>
+					</div><!-- navigation object : UEL level 1 and child nav menu -->
+
+					<ul class="main-nav-list first-lvl clearfix">
+						<li class="mob-show element-with-icon">
+							<h2><a href="#">UEL HOME</a></h2>
+						</li>
+						<li>
+							<a class="haveMobileChilds js-toggle-link" href="/about/">About</a>
+							<ul class="multilevel-linkul-0 js-second-lvl main-nav-list second-lvl clearfix" style="width: 1172px; margin-left: -29px; display: none;">
+								<li><a class="goToLink" href="/about/vision-and-values/index2.htm">Vision and Values</a></li>
+								<li><a class="goToLink" href="/about/campuses/">Our Campuses</a></li>
+								<li><a class="goToLink" href="/about/governance-and-management/">Governance and Management</a></li>
+								<li><a class="goToLink" href="/about/calendars/">Calendars</a></li>
+								<li><a class="goToLink" href="/about/achievements/">Achievements</a></li>
+								<li><a class="goToLink" href="/about/sports-agenda/">Sports Agenda</a></li>
+								<li><a class="goToLink" href="/about/east-london-regeneration/">UEL and Local Communities</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="haveMobileChilds js-toggle-link" href="/study/">Study Here</a>
+							<ul class="multilevel-linkul-0 js-second-lvl main-nav-list second-lvl clearfix" style="width: 1172px; margin-left: -29px; display: none;">
+								<li><a class="goToLink" href="/study/undergrad/">Undergraduate</a></li>
+								<li><a class="goToLink" href="/study/postgrad/">Postgraduate Taught</a></li>
+								<li><a class="goToLink" href="/study/pgr/">Postgraduate Research</a></li>
+								<li><a class="goToLink" href="/opendays/">Open Days</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a class="haveMobileChilds js-toggle-link" href="/international/">International</a>
+							<ul class="multilevel-linkul-0 js-second-lvl main-nav-list second-lvl clearfix" style="width: 1172px; margin-left: -29px; display: none;">
+								<li><a class="goToLink" href="/international/why/">Why Study at UEL</a></li>
+								<li><a class="goToLink" href="/international/countries/">Your Country</a></li>
+								<li><a class="goToLink" href="/international/application/">Applying to UEL</a></li>
+								<li><a class="goToLink" href="/international/fees/">Fees and Funding</a></li>
+								<li><a class="goToLink" href="/international/afterapplying/">After you apply</a></li>
+								<li><a class="goToLink" href="/international/orientation/">Starting at UEL</a></li>
+								<li><a class="goToLink" href="/international/internationalpartners/">Partnerships</a></li>
+								<li><a class="goToLink" href="/international/languagecentre/">Language Centre</a></li>
+								<li><a class="goToLink" href="/international/study-abroad/">Study Abroad at UEL</a></li>
+								<li><a class="goToLink" href="/international/study-abroad-home/">Study Abroad (home students)</a></li>
+							</ul>
+						</li>
+
+						<li><a href="/research/">Research</a></li>
+						<li>
+							<a class="haveMobileChilds js-toggle-link" href="/business-services/">Business</a>
+							<ul class="multilevel-linkul-0 js-second-lvl main-nav-list second-lvl clearfix" style="width: 1172px; margin-left: -29px; display: none;">
+								<li><a class="goToLink" href="/business-services/workwithourstudents/">Work with our Students</a></li>
+								<li><a class="goToLink" href="/business-services/knowledge/">Access UEL Knowledge</a></li>
+								<li><a class="goToLink" href="/business-services/services/">Services for Business</a></li>
+								<li><a class="goToLink" href="/business-services/collaboration/">Collaborate with UEL</a></li>
+								<li><a class="goToLink" href="/business-services/skills/">Improve Your Skills</a></li>
+								<li><a class="goToLink" href="/business-services/contacts/">Contacts</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a class="haveMobileChilds js-toggle-link" href="/sport/">Sport</a>
+							<ul class="multilevel-linkul-0 js-second-lvl main-nav-list second-lvl clearfix" style="width: 1172px; margin-left: -29px; display: none;">
+								<li><a class="goToLink" href="/sport/highperformance/">High Performance</a></li>
+								<li><a class="goToLink" href="/sport/courses/">Sport-Related Courses</a></li>
+								<li><a class="goToLink" href="/sport/clubs-participation/">Clubs and Participation</a></li>
+								<li><a class="goToLink" href="/sport/sports-facilities/">Sports Facilities</a></li>
+								<li><a class="goToLink" href="/sport/2012olympiclegacy/">2012 Olympic Legacy</a></li>
+								<li><a class="goToLink" href="/research/themes/shw/">Research</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a class="haveMobileChilds js-toggle-link" href="">News  Events</a>
+							<ul class="multilevel-linkul-0 js-second-lvl main-nav-list second-lvl clearfix" style="width: 1172px; margin-left: -29px; display: none;">
+								<li><a class="goToLink" href="/news/">News</a></li>
+								<li><a class="goToLink" href="http://events.uel.ac.uk/">Events</a></li>
+							</ul>
+						</li>
+
+						<li><a href="/alumni/">Alumni</a></li>
+
+						<li>
+							<a class="haveMobileChilds js-toggle-link" href="">Our Schools</a>
+
+							<ul class="multilevel-linkul-0 js-second-lvl main-nav-list second-lvl clearfix" style="width: 1172px; margin-left: -29px; display: none;">
+								<li><a class="goToLink" href="/ace/">Architecture, Comp. and Engineering</a></li>
+								<li><a class="goToLink" href="/adi/">Arts and Digital Industries</a></li>
+								<li><a class="goToLink" href="/cass/">Cass School of Education and Communities</a></li>
+								<li><a class="goToLink" href="/graduate/">Graduate School</a></li>
+								<li><a class="goToLink" href="/hsb/">Health, Sport and Bioscience</a></li>
+								<li><a class="goToLink" href="/lss/">Law and Social Sciences</a></li>
+								<li><a class="goToLink" href="/psychology/">Psychology</a></li>
+								<li><a class="goToLink" href="/business/">Royal Docks Business School</a></li>
+							</ul>
+						</li>
+
+						<li class="mob-show element-with-icon">
+							<h2><a href="/students/">Students</a></h2>
+						</li>
+
+						<li class="mob-show element-with-icon">
+							<h2><a href="/staff/">Staff</a></h2>
+						</li>
+
+						<li class="mob-show element-with-icon">
+							<h2><a href="/contactus/">Contact us</a></h2>
+						</li>
+
+						<li class="mob-show campus-element">
+							<h2 class="uni-name">Docklands Campus</h2>
+
+							<div class="uni-address">
+								University of East London Docklands Campus University Way London, E16 2RD United Kingdom <a href="http://www.uel.ac.uk/about/campuses/docklands/"></a>
+							</div>
+						</li>
+
+						<li class="mob-show campus-element">
+							<h2 class="uni-name">Stratford Campus</h2>
+
+							<div class="uni-address">
+								University of East London Stratford Campus Water Lane London, E15 4LZ United Kingdom <a href="http://www.uel.ac.uk/about/campuses/stratford/"></a>
+							</div>
+						</li>
+
+						<li class="mob-show campus-element">
+							<h2 class="uni-name">University Square Stratford</h2>
+
+							<div class="uni-address">
+								University of East London University Square Stratford 1 Salway Road London, E15 1NF United Kingdom <a href="http://www.uel.ac.uk/about/campuses/stratford/"></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</section>
+	</nav>
+</header>
+
+
+    <hr style="width:100%; margin-bottom: 10px; margin-top: 0;" />
+    <div id="repo_search" class="container-fluid">
+      <section>
+        <h2 class="sr-only">Search the repository</h2>
+        <form method="get" accept-charset="utf-8" action="{$config{http_cgiurl}}/search" style="display:inline">
+          <div id="search_box" class="col-md-offset-0 col-md-2 col-sm-8 col-xs-9">
+            <i class="glyphicon glyphicon-search" />
+            <input type="search" placeholder="Search the repository" class="ep_tm_searchbarboxX form-control" name="q" />
+          </div>
+          <div class="col-md-1 col-sm-2 col-xs-2">
+            <button class="btn btn-docklands" value="{phrase('lib/searchexpression:action_search')}" type="submit" name="_action_search">Search</button>
+          </div>
+          <input type="hidden" name="_action_search" value="Search" />
+          <input type="hidden" name="_order" value="bytitle" />
+          <input type="hidden" name="basic_srchtype" value="ALL" />
+          <input type="hidden" name="_satisfyall" value="ALL" />
+        </form>
+      </section>
+    </div>
+    <!-- /#repo_search -->
+    <div id="main_page" class="container-fluid">
+      <nav class="col-md-2 col-sm-2 col-xs-12">
+        <div class="shadow border">
+	 <h2 class="sr-only">Menu</h2>
+	 <epc:pin ref="login_status" />
+	</div>
+      </nav>
+      <main id="page" class="col-md-8 col-sm-8 col-xs-12">
+        <div class="ep_tm_page_content shadow border">
+          <h1 class="ep_tm_pagetitle">
+            <epc:pin ref="title" />
+          </h1>
+          <epc:pin ref="page" />
+        </div>
+      </main>
+      <aside class="col-md-2 col-sm-2 hidden-xs">
+	<div id="addnow" class="shadow border">
+		<h3>
+			<epc:phrase ref="deposit_h"/>
+		</h3>
+		<p><epc:phrase ref="deposit"/></p>
+		<form method="post" accept-charset="utf-8" action="/cgi/users/home" enctype="multipart/form-data"><input name="screen" id="screen" value="NewEPrint" type="hidden" /><input value="New Item" name="_action_create" type="submit" class="btn btn-docklands" /></form>
+	</div><br />
+	<div id="sidebar" class="shadow border">
+		<h3>Sidebar</h3>
+		<epc:phrase ref="about_repo" />
+	</div>
+	<br />
+	<div id="sidebar_top10" class="shadow border">
+		<h3>Top 10</h3>
+	</div>
+      </aside>
+	
+      <footer>
+        <div class="ep_tm_footer ep_noprint">
+          <div class="ep_tm_eprints_logo">
+            <a href="http://eprints.org/software/">
+              <img alt="EPrints Logo" src="{$config{rel_path}}/images/eprintslogo.gif" />
+            </a>
+          </div>
+          <epc:phrase ref="template:about_eprints" />
+        </div>
+      </footer>
+    </div>
+	<script>
+      <epc:phrase ref="docklands_script" />
+	j(document).ready(function () {
+		//j('#ep_phraseedit_docklands_btn_radius').click(previewCSS);
+  		j('.docklands_admin_widget input[type="button"][value="Preview"]').click(previewCSS);
+	});
+	
+	function previewCSS() {  
+ 		//var value = j(this).parent().parent().children('form').children('textarea').val();
+  	  	var css = j(this).data("css");
+		css = css.slice(10);
+ 		var value = j('#ep_phraseedit_docklands_'+css).children('textarea').val();
+    		alert("data: " + css + "\n value: " + value);
+		switch (css)
+		{
+			case "border_radius":
+			alert(value);
+			j(".border").css('border-radius', value+'px');
+			break;
+			
+
+			case "shadows":
+			alert(css);
+			j(".shadow").css('box-shadow', '0 0 '+value+'px rgba(0, 0, 0, 0.2)');
+			break;
+		
+			case "colour_1":
+			alert(css);
+			j(".btn-docklands, h1").css('background-color', '#'+value);
+			break;
+
+			case "colour_2":
+			alert(css+" "+value);
+			j(".btn-docklands").mouseover(function() {
+				j(this).css('background-color', '#'+value);
+			});
+			j(".btn-docklands").mouseout(function() {
+				j(this).css('background-color', '');
+			});
+		}
+
+	}
+	
+	</script>
+  </body>
+</html>
