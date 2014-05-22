@@ -12,6 +12,11 @@ This package also works with my Cookies package allowing you to theme the cookie
 
 -----
 Change Log:
-0.1.1  
+0.1.2
+
+Updated to fix LibXML related issue
+
+
+0.11  
 
 Patched by Rory McNicholl to make it work and remove some glaring errors. 
