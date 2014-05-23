@@ -28,33 +28,7 @@
     <link href="{$config{rel_path}}/docklands_template/Styles/recollect_overrides.css" rel="stylesheet" />
 
     <style type="text/css">
-
-	<epc:print expr="$config{docklands_default_css}" /> 
-
-	/* Style from phrases */
-	.btn-docklands {
-		background-color: #<epc:phrase ref="docklands_colour_1"/>;
-		color: #fff;
-		border-radius: <epc:phrase ref="docklands_btn_radius"/>px;//!important;
-	}
-	.btn-docklands:hover {
-                background-color: #<epc:phrase ref="docklands_colour_2"/>;//!important;
-                color: #fff;
-        }
-	.trim {
-		border-color: #<epc:phrase ref="docklands_colour_1"/>;
-	}
-	.shadow {box-shadow: 0 0 <epc:phrase ref="docklands_shadows"/>px rgba(0, 0, 0, 0.2);}	
-	.border {border: <epc:phrase ref="docklands_border_thick"/>px solid #<epc:phrase ref="docklands_colour_1"/>!important; border-radius: <epc:phrase ref="docklands_border_radius"/>px}
-	.borderbottom {border-bottom: <epc:phrase ref="docklands_border_thick"/>px solid #<epc:phrase ref="docklands_colour_1"/>!important;}
-	.navbar {border-radius: <epc:phrase ref="docklands_border_radius"/>px}
-	.ep_tm_footer {border-color: #<epc:phrase ref="docklands_colour_2"/>;!important;}
-	.nav-pills li a {border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important;}
-	#search_box input {border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important;}
-
-	#file_aside div.rd_citation_right {box-shadow: -<epc:phrase ref="docklands_shadows"/>px 0px 10px -7px rgba(0,0,0,0.5); border: <epc:phrase ref="docklands_border_thick"/>px solid #<epc:phrase ref="docklands_colour_1"/>!important;}
-	#page h1 {background-color: #<epc:phrase ref="docklands_colour_1"/>; border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important;}
-	.displayblock {display: block!important}
+        <epc:phrase ref="initial_css"/>
     </style>
 
    

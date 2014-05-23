@@ -28,22 +28,7 @@
     <link href="{$config{rel_path}}/docklands_template/Styles/recollect_overrides.css" rel="stylesheet" />
 
     <style type="text/css">
-	/* Style from phrases */
-	.btn-docklands {
-		background-color: #<epc:phrase ref="docklands_colour_1"/>;
-		color: #fff;
-		border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important;
-	}
-	.btn-docklands:hover {
-                background-color: #<epc:phrase ref="docklands_colour_2"/>;
-                color: #fff;
-        }
-	.trim {
-		border-color: #<epc:phrase ref="docklands_colour_1"/>;
-	}
-	#page h1 {background-color: #<epc:phrase ref="docklands_colour_1"/> }
-	.shadow {box-shadow: 0 0 <epc:phrase ref="docklands_shadows"/>px rgba(0, 0, 0, 0.2)!important;}	
-	.border {border: <epc:phrase ref="docklands_border_thick"/>px solid #<epc:phrase ref="docklands_colour_1"/>!important; border-radius: <epc:phrase ref="docklands_border_radius"/>px!important;}
+	<epc:phrase ref="initial_css"/>
     </style>
 
    
