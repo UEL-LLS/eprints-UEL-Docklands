@@ -30,14 +30,24 @@
     <style type="text/css">
 	/* Style from phrases */
 	.btn-docklands {
-		background-color: #<epc:phrase ref="docklands_colour_1"/>;
+		background-color: #<epc:phrase ref="docklands_colour_2"/>;
 		color: #fff;
 		border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important;
 	}
 	.btn-docklands:hover {
-                background-color: #<epc:phrase ref="docklands_colour_2"/>!important;
+                background-color: #<epc:phrase ref="docklands_colour_1"/>!important;
                 color: #fff;
         }
+	.btn-docklands-prime {
+		background-color: #<epc:phrase ref="docklands_colour_1"/>;
+                color: #fff;
+                border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important;
+	}
+	.btn-docklands-prime:hover {
+                background-color: #<epc:phrase ref="docklands_colour_2"/>;
+                color: #fff;
+	}
+
 	.trim {
 		border-color: #<epc:phrase ref="docklands_colour_1"/>;
 	}
@@ -69,7 +79,7 @@
             <input type="search" placeholder="Search the repository" class="ep_tm_searchbarboxX form-control" name="q" />
           </div>
           <div class="col-md-1 col-sm-2 col-xs-2">
-            <button class="btn btn-docklands" value="{phrase('lib/searchexpression:action_search')}" type="submit" name="_action_search">Search</button>
+            <button class="btn btn-docklands-prime" value="{phrase('lib/searchexpression:action_search')}" type="submit" name="_action_search">Search</button>
           </div>
           <input type="hidden" name="_action_search" value="Search" />
           <input type="hidden" name="_order" value="bytitle" />

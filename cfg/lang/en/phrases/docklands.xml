@@ -36,9 +36,11 @@ Event.observe(window, "load", function () {
         j( document ).ready(function() {
                 j('#ep_tm_menu_tools').addClass('nav nav-pills nav-stacked');
 
-                var tabs = j('#ep_tabs_tabs, #ep_admin_tabs_tabs, #ep_workflow_views_tabs');
-                var selected_tabs = j('#ep_tabs_tabs .ep_tab_selected, #ep_admin_tabs_tabs .ep_tab_selected, #ep_workflow_views_tabs .ep_tab_selected');
-                var li_tabs = j('#ep_tabs_tabs li, #ep_admin_tabs_tabs li, #ep_workflow_views_tabs li');
+		//pretty tabs
+                var tabs = j('#ep_tabs_tabs, #ep_admin_tabs_tabs, #ep_workflow_views_tabs, #ep_eprint_view_tabs');
+                //var selected_tabs = j('#ep_tabs_tabs .ep_tab_selected, #ep_admin_tabs_tabs .ep_tab_selected, #ep_workflow_views_tabs .ep_tab_selected');
+                var selected_tabs = j('.ep_tab_selected');
+                var li_tabs = j('#ep_tabs_tabs li, #ep_admin_tabs_tabs li, #ep_workflow_views_tabs li, #ep_eprint_view_tabs li');
                 tabs.removeClass('ep_tab_bar').addClass('nav nav-tabs');
                 selected_tabs.addClass('active');
                 li_tabs.click(function() {
@@ -47,9 +49,13 @@ Event.observe(window, "load", function () {
                 });
 
                 //pretty buttons
-                var buttons = j('.ep_action_list .ep_form_action_button, .ep_form_action_button')
+                var buttons_1 = j('.ep_action_list .ep_form_action_button, .ep_form_action_button, .ep_blister_node_selected')
+                var buttons_2 = j('.ep_blister_node')
+                buttons_1.addClass('btn btn-docklands-prime').removeClass('ep_form_action_button');
+                buttons_2.addClass('btn btn-docklands').removeClass('ep_form_action_button');
 
-                buttons.addClass('btn btn-docklands').removeClass('ep_form_action_button');
+		var blister_bar = j('.ep_blister_bar');
+		blister_bar.addClass('form-group');
 
                 //pretty forms
                 j('.ep_form_button_bar').addClass('form-group').removeClass('ep_form_button_bar');
