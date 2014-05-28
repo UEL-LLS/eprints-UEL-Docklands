@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epc="http://eprints.org/ep3/control">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+      <epc:pin ref="title" textonly="yes" />
+      -
+      <epc:phrase ref="archive_name" />
+    </title>
+    <link rel="icon" href="{$config{rel_path}}/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="{$config{rel_path}}/favicon.ico" type="image/x-icon" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" />
+    <epc:pin ref="head" />
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- UEL styles -->
+    <link href="{$config{rel_path}}/roar_old_template/Styles/main.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/roar_old_template/Styles/webfonts.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/roar_old_template/Styles/search.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/roar_old_template/Styles/UEL.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/roar_old_template/Styles/recollect_overrides.css" rel="stylesheet" />
+
+    <style type="text/css">
+	<epc:phrase ref="initial_css"/>
+    </style>
+
+   
+		
+  </head>
+  <body>
+    <epc:pin ref="pagetop" />
+    <header>
+<epc:phrase ref="custom_header_html"/>
+    </header>
+    <hr style="width:100%; margin-bottom: 10px; margin-top: 0;" />
+    <div id="repo_search" class="container-fluid">
+      <section>
+        <h2 class="sr-only">Search the repository</h2>
+        <form method="get" accept-charset="utf-8" action="{$config{http_cgiurl}}/search" style="display:inline">
+          <div id="search_box" class="col-md-offset-0 col-md-2 col-sm-8 col-xs-9">
+            <i class="glyphicon glyphicon-search" />
+            <input type="search" placeholder="Search the repository" class="ep_tm_searchbarboxX form-control" name="q" />
+          </div>
+          <div class="col-md-1 col-sm-2 col-xs-2">
+            <button class="btn btn-docklands-prime" value="{phrase('lib/searchexpression:action_search')}" type="submit" name="_action_search">Search</button>
+          </div>
+          <input type="hidden" name="_action_search" value="Search" />
+          <input type="hidden" name="_order" value="bytitle" />
+          <input type="hidden" name="basic_srchtype" value="ALL" />
+          <input type="hidden" name="_satisfyall" value="ALL" />
+        </form>
+      </section>
+    </div>
+    <!-- /#repo_search -->
+    <div id="main_page" class="container-fluid">
+      <nav class="col-md-2 col-sm-2 col-xs-12">
+        <div class="shadow border">
+	 <h2 class="sr-only">Menu</h2>
+	 <epc:pin ref="login_status" />
+	</div>
+      </nav>
+      <main id="page" class="col-md-8 col-sm-8 col-xs-12">
+        <div class="ep_tm_page_content shadow border">
+          <h1 class="ep_tm_pagetitle">
+            <epc:pin ref="title" />
+          </h1>
+          <epc:pin ref="page" />
+        </div>
+      </main>
+      <aside class="col-md-2 col-sm-2 hidden-xs">
+	<div id="addnow" class="shadow border">
+		<h3>
+			<epc:phrase ref="deposit_h"/>
+		</h3>
+		<p><epc:phrase ref="deposit"/></p>
+		<form method="post" accept-charset="utf-8" action="/cgi/users/home" enctype="multipart/form-data"><input name="screen" id="screen" value="NewEPrint" type="hidden" /><input value="New Item" name="_action_create" type="submit" class="btn btn-docklands" /></form>
+	</div><br />
+	<div id="sidebar" class="shadow border">
+		<h3>Sidebar</h3>
+		<epc:phrase ref="about_repo" />
+	</div>
+	<br />
+	<div id="sidebar_top10" class="shadow border">
+		<h3>Top 10</h3>
+	</div>
+      </aside>
+	
+      <footer>
+        <div class="ep_tm_footer ep_noprint">
+          <div class="ep_tm_eprints_logo">
+            <a href="http://eprints.org/software/">
+              <img alt="EPrints Logo" src="{$config{rel_path}}/images/eprintslogo.gif" />
+            </a>
+          </div>
+          <epc:phrase ref="template:about_eprints" />
+        </div>
+      </footer>
+    </div>
+	<script>
+      <epc:phrase ref="docklands_script" />
+	j(document).ready(function () {
+		//j('#ep_phraseedit_docklands_btn_radius').click(previewCSS);
+  		j('.docklands_admin_widget input[type="button"][value="Preview"]').click(previewCSS);
+	});
+	
+	function previewCSS() {  
+ 		//var value = j(this).parent().parent().children('form').children('textarea').val();
+  	  	var css = j(this).data("css");
+		css = css.slice(10);
+ 		var value = j('#ep_phraseedit_docklands_'+css).children('textarea').val();
+    		alert("data: " + css + "\n value: " + value);
+		switch (css)
+		{
+			case "border_radius":
+			alert(value);
+			j(".border").css('border-radius', value+'px');
+			break;
+			
+
+			case "shadows":
+			alert(css);
+			j(".shadow").css('box-shadow', '0 0 '+value+'px rgba(0, 0, 0, 0.2)');
+			break;
+		
+			case "colour_1":
+			alert(css);
+			j(".btn-docklands, h1").css('background-color', '#'+value);
+			break;
+
+			case "colour_2":
+			alert(css+" "+value);
+			j(".btn-docklands").mouseover(function() {
+				j(this).css('background-color', '#'+value);
+			});
+			j(".btn-docklands").mouseout(function() {
+				j(this).css('background-color', '');
+			});
+		}
+
+	}
+	
+	</script>
+  </body>
+</html>
