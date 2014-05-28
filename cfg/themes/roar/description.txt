@@ -1,1 +1,1 @@
-This is the default UEL theme.
+This is the default UEL theme. The header is based on the May 2014 UEL home page. 
