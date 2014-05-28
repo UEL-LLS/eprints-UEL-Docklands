@@ -57,6 +57,8 @@ Event.observe(window, "load", function () {
 		var blister_bar = j('.ep_blister_bar');
 		blister_bar.addClass('form-group');
 
+		j('input[value="Cancel"]').addClass('btn-danger').removeClass('btn-docklands-prime');		
+		j('input[value="Save and Return"]').addClass('btn-success').removeClass('btn-docklands-prime');		
 
 
                 //pretty forms
