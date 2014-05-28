@@ -46,7 +46,7 @@
             <input type="search" placeholder="Search the repository" class="ep_tm_searchbarboxX form-control" name="q" />
           </div>
           <div class="col-md-1 col-sm-2 col-xs-2">
-            <button class="btn btn-docklands" value="{phrase('lib/searchexpression:action_search')}" type="submit" name="_action_search">Search</button>
+            <button class="btn btn-docklands-prime" value="{phrase('lib/searchexpression:action_search')}" type="submit" name="_action_search">Search</button>
           </div>
           <input type="hidden" name="_action_search" value="Search" />
           <input type="hidden" name="_order" value="bytitle" />
@@ -77,7 +77,7 @@
 			<epc:phrase ref="deposit_h"/>
 		</h3>
 		<p><epc:phrase ref="deposit"/></p>
-		<form method="post" accept-charset="utf-8" action="/cgi/users/home" enctype="multipart/form-data"><input name="screen" id="screen" value="NewEPrint" type="hidden" /><input value="New Item" name="_action_create" type="submit" class="btn btn-docklands" /></form>
+		<form method="post" accept-charset="utf-8" action="/cgi/users/home" enctype="multipart/form-data"><input name="screen" id="screen" value="NewEPrint" type="hidden" /><input value="New Item" name="_action_create" type="submit" class="btn btn-docklands-prime" /></form>
 	</div><br />
 	<div id="sidebar" class="shadow border">
 		<h3>Sidebar</h3>

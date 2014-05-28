@@ -64,6 +64,10 @@ Event.observe(window, "load", function () {
                 formbar.addClass('form-group').removeClass('ep_form_button_bar');
                 j('#theme_select_form input.btn').addClass('col-md-12');
 
+		//better tables
+		var tables = j('table.ep_columns, #ep_phraseedit_table');
+		tables.addClass('table');
+		
 		//replacing EPrints alerts
 		j('.ep_msg_warning_content').addClass('bg-warning').removeClass('ep_msg_warning_content');
 		j('.ep_msg_error_content').addClass('bg-danger').removeClass('ep_msg_error_content');
