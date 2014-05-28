@@ -17,8 +17,6 @@
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
-    <!-- Modernizr -->
-    <script src="{$config{rel_path}}/docklands_template/Scripts/modernizr.js" />
 
     <!-- UEL styles -->
     <link href="{$config{rel_path}}/docklands_template/Styles/main.css" rel="stylesheet" />
@@ -29,10 +27,8 @@
 
     <style type="text/css">
         <epc:phrase ref="initial_css"/>
+	#neutral-nav { border-bottom: 2px solid #<epc:phrase ref="docklands_colour_1"/>!important;}
     </style>
-
-   
-		
   </head>
   <body>
     <epc:pin ref="pagetop" />

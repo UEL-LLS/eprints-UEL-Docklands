@@ -5,7 +5,7 @@
 ********/
 body {
 font-family: Arial, Helvetica, sans-serif;
-font-size: 14px line-height: 20px;
+font-size: 10px!important; line-height: 20px;
 color: #050505;
 }
 .ep_summary_box_title, .ep_summary_box_body, .ep_sr_title_bar, .ep_sr_content, .ep_sr_collapse_bar, .ep_tab_panel, .ep_toolbox_content, .ep_upload_doc, .ep_search_buttons, .ep_search_controls, .ep_search_controls_bottom, .ep_view_group_by {
@@ -15,6 +15,10 @@ background-color: #fff;
 
 #main_page > nav, #main_page > main {
 margin-bottom: 1em;
+}
+
+#main_page {
+font-size: 14px;
 }
 
 .ep_tm_key_tools li {
@@ -34,22 +38,24 @@ min-width: 0;
 margin-top: 0;
 }
 
-#uel-navbackground {
-	
-}
+/**********
+  Top Bit   
+**********/
+
 #uel-navbar {
 border: none;
-border-radius: none;
+border-radius: 0;
 }
 .navbar {
-min-height: 30px
+min-height: 4em;
+margin-bottom: 0!important;
+	
 }
-#uel-navbar, #uel-navbackground {
-background: #009bd9;
-
+a.navbar-brand {
+ color: #fff!important;
 }
 #uel-navbar, #uel-navbackground a {
-color: #fff;
+color: #0094d5;
 }
 
 .navbar-collapse {
@@ -58,14 +64,8 @@ box-shadow: none;
 }
 
 .navbar-header .brand {
-background: url("http://www.uel.ac.uk/wwwmedia/uelwebsite/styleassets/images/sprites_secondary.png") no-repeat -150px -48px;
-background-size: 273px 410px; 
-width: 144px;
 }
 
-/*.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle .icon-bar {
-background-color: #transparent!important;
-}*/
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 background-color: #fff;
 }
@@ -92,11 +92,22 @@ line-height: 1.42857143;
 color: #fff;
 }
 
+.glyphsize {font-size: 18px}
+
+.navbar {
+
+background: #0094d5;
+}
+
 
 @media screen and (min-width:768px){
 
 #topnav > ul > li.active {
         display: block;
+}
+
+#uel-navbar, #uel-navbackground a {
+color: #fff;
 }
 
 #main_page {
@@ -105,56 +116,81 @@ color: #fff;
 }
 
 
-/*#uel-navbar, #uel-navbackground {*/
-#uel-navbar {
-
-/*background: -moz-linear-gradient(top, #009bd9 0%, #028ec7 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #009bd9), color-stop(100%, #028ec7));
-background: -webkit-linear-gradient(top, #009bd9 0%, #028ec7 100%);
-background: -o-linear-gradient(top, #009bd9 0%, #028ec7 100%);
-background: -ms-linear-gradient(top, #009bd9 0%, #028ec7 100%);
-background: linear-gradient(to bottom, #009bd9 0%, #028ec7 100%);
-*/
-height: 31px;
-border-bottom: 1px solid #0973a0;
-color: #fff;
+#uel-navbackground {
+border-bottom: 2px solid #d9d9d9;
+}
+.navbar {
+font-size: 10px;
+font-family: Arial;
+height: 4em;
+background: #0094d5;
+}
+.navbar a {
+text-decoration: none;
+-webkit-transition: all 0.15s ease-in-out;
+-moz-transition: all 0.15s ease-in-out;
+-ms-transition: all 0.15s ease-in-out;
+-o-transition: all 0.15s ease-in-out;
+transition: all 0.15s ease-in-out;
+//line-height: 2.5em;
+color: #fefefe;
+font-family: Arial;
+display: inline-block;
+height: 161%;
+text-align: center;
+background: #0094d5;
 }
 
-.navbar #topnav .nav > li > a {
-padding: 5px 7px;
-font-size: 13px;
-text-transform: none;
-font-weight: bold;
-border-left: 1px solid #53bce9;
-border-right: 1px solid #0774a2;
+.navbar-header a, #topnav a {
+font-size: 16px;
 }
-#topnav > ul > li.active > a, #topnav > ul > li:hover > a {
-color: #009ad8;
-background-color: #fff;
-border-bottom: 1px solid #FFF;
 
-border-left: 1px solid #fff!important;
-border-right: 1px solid #fff!important;
+#topnav > ul > li.active > a, #topnav > ul > li:hover > a, .navbar-header a:hover {
+background: #003471;
+color: white;
+}
+.navbar-header a:hover {
+background: #003471!important;
+
+}
+
+li.no-hover:hover > a {
+background: none!important;
+}
+.navbar-brand, #topnav > .navbar-nav > li > a, .navbar-brand, #topnav > .navbar-nav > li > span {
+padding-top: 10px!important;
+padding-bottom: 10px!important
 }
 
 .navbar-header .brand {
-width: 376px;
-height: 118px;
-position: absolute;
-top: 35px;
-left: 1px;
-background: url("http://www.uel.ac.uk/wwwmedia/uelwebsite/styleassets/images/sprites_secondary.png") no-repeat -410px -10px;
-padding: 0;
-margin-left: 0px!important;
+}
+#lowernav {
+padding-top: 1.3em;
+left: 8.2em;
+position: relative;
 }
 
+#lowernav .logo-wrapper {
+float: left
+}
+
+#lowernav ul {
+padding-top: 3.7em;
+}
 #lowernav li > a {
-background: #fff;
-font-size: 14px;
-font-weight: normal;
-color: #444;
-border: 0 none;
-padding: 14px 13px 16px;
+text-decoration: none;
+font-size: 1.6em;
+color: #3e3e3e;
+font-family: Arial;
+font-weight: bold;
+display: inline-block;
+padding: 0.875em 1.15em 1.75em;
+-webkit-transition: -webkit-transform, 0.15s, ease-in-out;
+-moz-transition: -moz-transform, 0.15s, ease-in-out;
+-o-transition: -o-transform, 0.15s, ease-in-out;
+transition: transform, 0.15s, ease-in-out;
+}
+
 }
 
 #lowernav li > a:hover {
@@ -165,8 +201,8 @@ text-transform: none;
 
 	#topnav,#lowernav {
 
-	left: 25.2em;
-	position: relative
+	//left: 25.2em;
+	//position: relative
 	}
 
 
@@ -175,4 +211,5 @@ text-transform: none;
 	padding-left: 1em;
 }
 
-}
+
+

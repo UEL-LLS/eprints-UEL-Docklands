@@ -18,9 +18,9 @@
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" />
 
     <!-- Docklands styles -->
-    <link href="{$config{rel_path}}/docklands_template/Styles/main.css" rel="stylesheet" />
-    <link href="{$config{rel_path}}/docklands_template/Styles/search.css" rel="stylesheet" />
-    <link href="{$config{rel_path}}/docklands_template/Styles/recollect_overrides.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/neutral_template/Styles/main.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/neutral_template/Styles/search.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/neutral_template/Styles/recollect_overrides.css" rel="stylesheet" />
 
     <style type="text/css">
 	/* Style from phrases */
@@ -40,8 +40,6 @@
 	.shadow {box-shadow: 0 0 <epc:phrase ref="docklands_shadows"/>px rgba(0, 0, 0, 0.2)!important;}	
 	.border {border: <epc:phrase ref="docklands_border_thick"/>px solid #<epc:phrase ref="docklands_colour_1"/>!important; border-radius: <epc:phrase ref="docklands_border_radius"/>px!important;}
     </style>
-
-   
 		
   </head>
   <body>

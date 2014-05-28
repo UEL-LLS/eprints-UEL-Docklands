@@ -17,22 +17,17 @@
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
-    <!-- Modernizr -->
-    <script src="{$config{rel_path}}/docklands_template/Scripts/modernizr.js" />
 
     <!-- Docklands styles -->
-    <link href="{$config{rel_path}}/docklands_template/Styles/main.css" rel="stylesheet" />
-    <link href="{$config{rel_path}}/docklands_template/Styles/webfonts.css" rel="stylesheet" />
-    <link href="{$config{rel_path}}/docklands_template/Styles/search.css" rel="stylesheet" />
-    <link href="{$config{rel_path}}/docklands_template/Styles/UEL.css" rel="stylesheet" />
-    <link href="{$config{rel_path}}/docklands_template/Styles/recollect_overrides.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/stratford_template/Styles/main.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/stratford_template/Styles/webfonts.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/stratford_template/Styles/search.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/stratford_template/Styles/UEL.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/stratford_template/Styles/recollect_overrides.css" rel="stylesheet" />
 
     <style type="text/css">
 	<epc:phrase ref="initial_css"/>
     </style>
-
-   
-		
   </head>
   <body>
     <epc:pin ref="pagetop" />
