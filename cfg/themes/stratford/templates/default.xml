@@ -27,14 +27,14 @@
 
     <style type="text/css">
 	<epc:phrase ref="initial_css"/>
+        #neutral-nav { border-bottom: 2px solid #<epc:phrase ref="docklands_colour_1"/>!important;}
     </style>
   </head>
   <body>
     <epc:pin ref="pagetop" />
     <header>
-<epc:phrase ref="neutral_header"/>;
+<epc:phrase ref="neutral_header"/>
     </header>
-    <hr style="width:100%; margin-bottom: 10px; margin-top: 0;" />
     <div id="repo_search" class="container-fluid">
       <section>
         <h2 class="sr-only">Search the repository</h2>
