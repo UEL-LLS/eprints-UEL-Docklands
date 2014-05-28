@@ -37,10 +37,10 @@ Event.observe(window, "load", function () {
                 j('#ep_tm_menu_tools').addClass('nav nav-pills nav-stacked');
 
 		//pretty tabs
-                var tabs = j('#ep_tabs_tabs, #ep_admin_tabs_tabs, #ep_workflow_views_tabs, #ep_eprint_view_tabs');
-                //var selected_tabs = j('#ep_tabs_tabs .ep_tab_selected, #ep_admin_tabs_tabs .ep_tab_selected, #ep_workflow_views_tabs .ep_tab_selected');
+                var tabs = j('#ep_tabs_tabs, #ep_admin_tabs_tabs, #ep_workflow_views_tabs, #ep_eprint_view_tabs, #_tabs');
+                //var selected_tabs = j('#ep_tabs_tabs .ep_tab_selected, #ep_admin_tabs_tabs .ep_tab_selected, #ep_workflow_views_tabs .ep_tab_selectedi, #_tabs .ep_tab_selected');
                 var selected_tabs = j('.ep_tab_selected');
-                var li_tabs = j('#ep_tabs_tabs li, #ep_admin_tabs_tabs li, #ep_workflow_views_tabs li, #ep_eprint_view_tabs li');
+                var li_tabs = j('#ep_tabs_tabs li, #ep_admin_tabs_tabs li, #ep_workflow_views_tabs li, #ep_eprint_view_tabs li, #_tabs li');
                 tabs.removeClass('ep_tab_bar').addClass('nav nav-tabs');
                 selected_tabs.addClass('active');
                 li_tabs.click(function() {
@@ -64,6 +64,10 @@ Event.observe(window, "load", function () {
                 formbar.addClass('form-group').removeClass('ep_form_button_bar');
                 j('#theme_select_form input.btn').addClass('col-md-12');
 
+		//replacing EPrints alerts
+		j('.ep_msg_warning_content').addClass('bg-warning').removeClass('ep_msg_warning_content');
+		j('.ep_msg_error_content').addClass('bg-danger').removeClass('ep_msg_error_content');
+		
 
                 //Theme Descriptions
                 var desc = j('#theme_select option:selected').data('description');
@@ -109,7 +113,7 @@ Event.observe(window, "load", function () {
         .nav-pills li a {border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important;}
         #search_box input {border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important;}
 
-        #file_aside div.rd_citation_right {box-shadow: -<epc:phrase ref="docklands_shadows"/>px 0px 10px -7px rgba(0,0,0,0.5); border: <epc:phrase ref="docklands_border_thick"/>px solid #<epc:phrase ref="docklands_colour_1"/>!important;}
+        #file_aside div.rd_citation_right {box-shadowX: -<epc:phrase ref="docklands_shadows"/>px 0px 10px -7px rgba(0,0,0,0.5); border: <epc:phrase ref="docklands_border_thick"/>px solid #<epc:phrase ref="docklands_colour_1"/>!important;}
         #page h1 {background-color: #<epc:phrase ref="docklands_colour_1"/>!important; border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important;}
         .displayblock {display: block!important}
 </epp:phrase>
