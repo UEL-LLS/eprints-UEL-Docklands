@@ -12,8 +12,8 @@
 <epp:phrase id="Plugin/Screen/ThemeAdmin:theme_selection"><p>Select from the installed themes. Only Docklands compatable themes will be shown here. Other themes will have to be select in the usual way, by editing a file in the cfg.d folder.</p></epp:phrase>
 
 
-<epp:phrase id="docklands_colour_1">0396D6</epp:phrase>
-<epp:phrase id="docklands_colour_2">0063A4</epp:phrase>
+<epp:phrase id="docklands_colour_1">0094d5</epp:phrase>
+<epp:phrase id="docklands_colour_2">005e9f</epp:phrase>
 <epp:phrase id="docklands_btn_radius">0</epp:phrase>
 <epp:phrase id="docklands_shadows">20</epp:phrase>
 <epp:phrase id="docklands_border_thick">0</epp:phrase>
