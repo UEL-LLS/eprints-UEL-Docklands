@@ -140,6 +140,12 @@ END
 	my $conf = join "", $conf1, $conf2;
 	#print $conf;
         my $write = EPrints->system->write_config_file( $dest, $conf );
+	
+	my @files = <$dest.2*>;
+	if (@files) {
+	 unlink @files or warn "Problem unlinking @files: $!";
+	} 	
+
 	$session->reload_config;
 	#$session->{screenid} = "Admin";
 	#$self->{processor}->{refresh};
