@@ -60,6 +60,14 @@ Event.observe(window, "load", function () {
 		j('input[value="Cancel"]').addClass('btn-danger').removeClass('btn-docklands-prime');		
 		j('input[value="Save and Return"]').addClass('btn-success').removeClass('btn-docklands-prime');		
 
+		//nice seearch swish
+		j('#search_box input').focus( function(){
+			j( this ).parent().removeClass('col-md-2').addClass('col-md-10');
+		});
+		j('#search_box input').focusout( function(){
+			j( this ).parent().removeClass('col-md-10').addClass('col-md-2');
+		});
+
 
                 //pretty forms
 		var formbar = j('.ep_form_button_bar');
