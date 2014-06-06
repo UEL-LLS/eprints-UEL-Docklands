@@ -92,6 +92,8 @@ Event.observe(window, "load", function () {
 
                 });
 
+		//j("#toptenAJAX").load("");
+
         });
 </epp:phrase>
 
