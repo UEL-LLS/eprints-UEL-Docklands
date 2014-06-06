@@ -1,0 +1,15 @@
+#add_item {
+
+position: absolute;
+right: 2em;
+top: 6em; 
+width: 32em
+
+}
+#add_item p {
+display: inline-block;
+width: 22em;
+}
+#add_item h3 {
+margin-top: 4px;
+}
