@@ -24,6 +24,7 @@
     <link href="{$config{rel_path}}/roar_template/Styles/search.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/roar_template/Styles/UEL.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/roar_template/Styles/recollect_overrides.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/roar_template/Styles/roar.css" rel="stylesheet" />
 
     <style type="text/css">
         <epc:phrase ref="initial_css"/>
@@ -35,7 +36,12 @@
 <header>
 <epc:phrase ref="custom_header_html_new"/>
 </header>
-
+<aside id="add_item" class="visible-md visible-lg shadow border">
+                <h3>
+                        <epc:phrase ref="deposit_h"/>
+                </h3>
+                <p><epc:phrase ref="deposit"/></p><form method="post" accept-charset="utf-8" action="/cgi/users/home" enctype="multipart/form-data"><input name="screen" id="screen" value="NewEPrint" type="hidden" /><input value="New Item" name="_action_create" type="submit" class="btn btn-docklands-prime" /></form>
+</aside>
     <hr style="width:100%; margin-bottom: 10px; margin-top: 0;" />
     <div id="repo_search" class="container-fluid">
       <section>
@@ -63,7 +69,7 @@
 	 <epc:pin ref="login_status" />
 	</div>
       </nav>
-      <main id="page" class="col-md-8 col-sm-8 col-xs-12">
+      <main id="page" class="col-md-10 col-sm-10 col-xs-12">
         <div class="ep_tm_page_content shadow border">
           <h1 class="ep_tm_pagetitle">
             <epc:pin ref="title" />
@@ -71,23 +77,6 @@
           <epc:pin ref="page" />
         </div>
       </main>
-      <aside class="col-md-2 col-sm-2 hidden-xs container-fluid">
-	<div id="addnow" class="shadow border spacer-b col-md-12">
-		<h3>
-			<epc:phrase ref="deposit_h"/>
-		</h3>
-		<p><epc:phrase ref="deposit"/></p>
-		<form method="post" accept-charset="utf-8" action="/cgi/users/home" enctype="multipart/form-data"><input name="screen" id="screen" value="NewEPrint" type="hidden" /><input value="New Item" name="_action_create" type="submit" class="btn btn-docklands-prime" /></form>
-	</div>
-	<div id="sidebar" class="shadow border spacer-b col-md-12">
-		<h3>Sidebar</h3>
-		<epc:phrase ref="about_repo" />
-	</div><br />
-	<div id="sidebar_top10" class="shadow border spacer-b col-md-12">
-		<h3>Top 10</h3>
-		<div id="toptenAJAX"></div>
-	</div>
-      </aside>
 	
       <footer>
         <div class="ep_tm_footer ep_noprint">
