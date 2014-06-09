@@ -52,8 +52,8 @@
             <i class="glyphicon glyphicon-search" />
             <input type="search" placeholder="Search the repository" class="ep_tm_searchbarboxX form-control" name="q" />
           </div>
-          <div class="col-md-1 col-sm-2 col-xs-2">
-            <button class="btn btn-docklands-prime" value="{phrase('lib/searchexpression:action_search')}" type="submit" name="_action_search">Search</button>
+          <div class="col-md-2 col-sm-2 col-xs-4">
+            <button id="search_button" class="btn btn-docklands-prime hidden-lg hidden-md hidden-sm" value="{phrase('lib/searchexpression:action_search')}" type="submit" name="_action_search">Search</button>
           </div>
           <input type="hidden" name="_action_search" value="Search" />
           <input type="hidden" name="_order" value="bytitle" />

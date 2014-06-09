@@ -63,9 +63,11 @@ Event.observe(window, "load", function () {
 		//nice seearch swish
 		j('#search_box input').focus( function(){
 			j( this ).parent().removeClass('col-md-2').addClass('col-md-10');
+			j('#search_button').removeClass('hidden-lg hidden-md hidden-sm');
 		});
 		j('#search_box input').focusout( function(){
 			j( this ).parent().removeClass('col-md-10').addClass('col-md-2');
+			j('#search_button').addClass('hidden-lg hidden-md hidden-sm');
 		});
 
 
