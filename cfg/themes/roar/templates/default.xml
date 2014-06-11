@@ -19,13 +19,18 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
 
     <!-- UEL styles -->
-    <link href="{$config{rel_path}}/roar_template/Styles/main.css?0.1" rel="stylesheet" />
-    <link href="{$config{rel_path}}/roar_template/Styles/webfonts.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/roar_template/Styles/main.css" rel="stylesheet" />
+    <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/main.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/roar_template/Styles/search.css" rel="stylesheet" />
+    <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/search.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/roar_template/Styles/UEL.css" rel="stylesheet" />
+    <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/UEL.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/roar_template/Styles/recollect_overrides.css" rel="stylesheet" />
+    <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/recollect_overrides.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/roar_template/Styles/roar.css" rel="stylesheet" />
     <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/roar.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/roar_template/Styles/summary.css" rel="stylesheet" />
+    <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/summary.css" rel="stylesheet" />
 
     <style type="text/css">
         <epc:phrase ref="initial_css"/>
