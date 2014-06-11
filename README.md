@@ -12,6 +12,11 @@ This package also works with my Cookies package allowing you to theme the cookie
 
 -----
 Change Log:
+
+0.2 
+
+Update to link to rawgit to assist Tim with development
+
 0.1.2
 
 Updated to fix LibXML related issue
