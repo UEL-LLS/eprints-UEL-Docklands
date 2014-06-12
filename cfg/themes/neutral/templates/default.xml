@@ -19,6 +19,7 @@
 
     <!-- Docklands styles -->
     <link href="{$config{rel_path}}/neutral_template/Styles/main.css" rel="stylesheet" />
+    <!--link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/main.css" rel="stylesheet" /-->
     <link href="{$config{rel_path}}/neutral_template/Styles/search.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/neutral_template/Styles/recollect_overrides.css" rel="stylesheet" />
 
