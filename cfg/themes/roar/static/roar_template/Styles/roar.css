@@ -1,6 +1,10 @@
 /************
   Theme CSS 
 *************/
+body {
+font-size: 10px!important;
+}
+
 
 #add_item {
 
@@ -16,4 +20,146 @@ width: 22em;
 }
 #add_item h3 {
 margin-top: 4px;
+}
+
+/**********
+  Top Bit   
+**********/
+
+#uel-navbar {
+border: none;
+border-radius: 0;
+}
+.navbar {
+min-height: 4em;
+margin-bottom: 0!important;
+
+}
+a.navbar-brand {
+ color: #fff!important;
+}
+#uel-navbar, #uel-navbackground a {
+color: #0094d5;
+}
+.navbar { background: #0094d5}
+
+.navbar-collapse {
+border: none;
+box-shadow: none;
+}
+
+.navbar-header .brand {
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+background-color: #fff;
+}
+.navbar-default .navbar-toggle:focus .icon-bar , .navbar-default .navbar-toggle:hover .icon-bar {
+background-color: #009bd9;
+}
+
+#topnav > ul > li.active {
+        display: none;
+}
+
+@media screen and (min-width:768px){
+
+#topnav > ul > li.active {
+        display: block;
+}
+
+#uel-navbar, #uel-navbackground a {
+color: #fff;
+}
+
+#main_page {
+        margin-top: 1em;
+        min-height: 20em;
+}
+
+
+#uel-navbackground {
+border-bottom: 2px solid #d9d9d9;
+}
+.navbar {
+font-size: 10px;
+font-family: Arial;
+height: 4em;
+//background: #0094d5;
+}
+.navbar a {
+text-decoration: none;
+-webkit-transition: all 0.15s ease-in-out;
+-moz-transition: all 0.15s ease-in-out;
+-ms-transition: all 0.15s ease-in-out;
+-o-transition: all 0.15s ease-in-out;
+transition: all 0.15s ease-in-out;
+//line-height: 2.5em;
+color: #fefefe;
+font-family: Arial;
+display: inline-block;
+height: 161%;
+text-align: center;
+//background: #0094d5;
+}
+
+.navbar-header a, #topnav a {
+font-size: 16px;
+}
+
+#topnav > ul > li.active > a, #topnav > ul > li:hover > a, .navbar-header a:hover {
+background: #003471;
+color: white;
+}
+.navbar-header a:hover {
+background: #003471!important;
+
+}
+
+li.no-hover:hover > a {
+background: none!important;
+}
+.navbar-brand, #topnav > .navbar-nav > li > a, .navbar-brand, #topnav > .navbar-nav > li > span {
+padding-top: 10px!important;
+padding-bottom: 10px!important
+}
+
+.navbar-header .brand {
+}
+#lowernav {
+padding-top: 1.3em;
+left: 8.2em;
+position: relative;
+}
+
+#lowernav .logo-wrapper {
+float: left
+}
+
+#lowernav ul {
+padding-top: 3.7em;
+}
+#lowernav li > a {
+text-decoration: none;
+font-size: 1.6em;
+color: #3e3e3e;
+font-family: Arial;
+font-weight: bold;
+display: inline-block;
+padding: 0.875em 1.15em 1.75em;
+-webkit-transition: -webkit-transform, 0.15s, ease-in-out;
+-moz-transition: -moz-transform, 0.15s, ease-in-out;
+-o-transition: -o-transform, 0.15s, ease-in-out;
+transition: transform, 0.15s, ease-in-out;
+}
+
+}
+
+#lowernav li > a:hover {
+border: 0 none;
+color: #0063A4;
+text-transform: none;
 }
