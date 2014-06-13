@@ -26,12 +26,6 @@
 <epp:phrase id="Plugin/Screen/ThemeAdmin:cancel">Cancel</epp:phrase>
 
 <epp:phrase id="docklands_script">
-Event.observe(window, "load", function () {
-                node = $("ep_tm_menu_tools");
-                node.addClassName("nav");
-                node.addClassName("nav-pills");
-                node.addClassName("nav-stacked");
-        });
         var j = jQuery.noConflict();
         j( document ).ready(function() {
                 j('#ep_tm_menu_tools').addClass('nav nav-pills nav-stacked');
