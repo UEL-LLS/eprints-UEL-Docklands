@@ -17,3 +17,12 @@ min-height: 7em;
 float: right;
 
 }
+
+#summary_citation > .btn-group > li.active button {
+
+background-color: #005e9f
+
+}
+#summary_citation > .btn-group > li.active button {
+color: #fff;
+}
