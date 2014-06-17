@@ -7,3 +7,14 @@
 margin-bottom: 1em;
 
 }
+
+#summary_citation .tab-content {
+
+min-height: 7em;
+
+}
+#summary_citation .btn-group{
+
+float: right;
+
+}
