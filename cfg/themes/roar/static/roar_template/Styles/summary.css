@@ -8,12 +8,11 @@ margin-bottom: 1em;
 
 }
 
-#summary_citation > .tab-content {
-
+#summary_citation > .tab-contents {
 min-height: 7em;
 
 }
-#summary_citationi > .btn-group{
+#summary_citation > .btn-group {
 
 float: right;
 
