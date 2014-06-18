@@ -26,3 +26,11 @@ background-color: #005e9f
 #summary_citation > .btn-group > li.active button {
 color: #fff;
 }
+
+
+#summary_reviewed:hover, #summary_reviewed:active {
+background-color: #5cb85c;
+border-color: #4cae4c;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
