@@ -163,3 +163,14 @@ border: 0 none;
 color: #0063A4;
 text-transform: none;
 }
+
+/************
+ prime stuff
+************/
+
+.panel-docklands-prime {
+border-radius: 0!important;
+}
+.panel-docklands-prime > .panel-heading {
+background-color: #0094d5;
+}
