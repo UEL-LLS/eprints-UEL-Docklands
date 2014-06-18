@@ -12,11 +12,20 @@ margin-bottom: 1em;
 min-height: 7em;
 
 }
-#summary_citation > .btn-group {
+
+
+/*******************************
+ float the buttons to the right
+*******************************/
+
+
+#summary_citation > .btn-group, #summary_abstract > button, #summary_metadata > button {
 
 float: right;
 
 }
+
+
 
 #summary_citation > .btn-group > li.active button {
 
