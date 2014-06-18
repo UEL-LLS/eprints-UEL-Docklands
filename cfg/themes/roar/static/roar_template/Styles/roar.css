@@ -173,4 +173,7 @@ border-radius: 0!important;
 }
 .panel-docklands-prime > .panel-heading {
 background-color: #0094d5;
+color: #fff;
+border-top-right-radius: 0px;
+border-top-left-radius: 0px;
 }
