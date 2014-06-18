@@ -52,7 +52,7 @@ box-shadow: none;
  Download styles
 ****************/
 
-#summary_downloads > img {
+.ep_doc_icon {
 float: right;
 }
 
