@@ -28,10 +28,19 @@ color: #fff;
 }
 
 
+#summary_reviewed > .btn {
+width: 100%
+}
+
 //#summary_reviewed:hover, #summary_reviewed:active {
 .btn-not-btn:hover, .btn-not-btn:active {
 background-color: #5cb85c;
 border-color: #4cae4c;
 -webkit-box-shadow: none;
 box-shadow: none;
+}
+
+
+.altmetric_error {
+display: none;
 }
