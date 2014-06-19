@@ -43,6 +43,7 @@ position: relative;
 left:-5px;
 display: inline-block;
 text-align: center;
+text-align: left;
 vertical-align: middle;
 border: 1px solid transparent;
 padding: 6px 12px;
