@@ -13,6 +13,11 @@ This package also works with my Cookies package allowing you to theme the cookie
 -----
 Change Log:
 
+0.2.2
+
+Added remove stylesheet for development work. Focus on summary page and front page. 
+
+
 0.2 
 
 Update to link to rawgit to assist Tim with development
