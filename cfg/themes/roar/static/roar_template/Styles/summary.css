@@ -60,3 +60,12 @@ float: right;
 .altmetric_error {
 display: none;
 }
+
+
+/**************************
+ temp style for front page
+**************************/
+
+.panel-docklands-fp > img {
+width: 100%
+}
