@@ -61,11 +61,3 @@ float: right;
 display: none;
 }
 
-
-/**************************
- temp style for front page
-**************************/
-
-.panel-docklands-fp > img {
-width: 100%
-}
