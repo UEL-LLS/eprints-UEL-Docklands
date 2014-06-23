@@ -171,6 +171,9 @@ text-transform: none;
 .panel-docklands-prime, .panel-docklands-fp {
 border-radius: 0!important;
 }
+.panel-docklands-prime > .panel-body, .panel-docklands-fp > .panel-body {
+border-top: 0px solid #ddd
+}
 .panel-docklands-prime > .panel-heading, .panel-docklands-fp > .panel-heading {
 background-color: #0094d5;
 color: #fff;
