@@ -25,6 +25,10 @@ float: right;
 
 }
 
+.see-more button {
+margin-top: 2em;
+}
+
 
 
 #summary_citation > .btn-group > li.active button {
