@@ -10,7 +10,7 @@
     </title>
     <link rel="icon" href="{$config{rel_path}}/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="{$config{rel_path}}/favicon.ico" type="image/x-icon" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" />
     <epc:pin ref="head" />
     <!-- Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,6 +21,10 @@
     <!-- Expander -->
     <script src="{$config{rel_path}}/roar_template/Scripts/jquery.expander.min.js" />
     <!--script src="https://rawgit.com/kswedberg/jquery-expander/master/jquery.expander.min.js" /-->
+
+    <!-- ZeroClipboard -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.3/ZeroClipboard.min.js" />
+
 
     <!-- UEL styles -->
     <link href="{$config{rel_path}}/roar_template/Styles/main.css" rel="stylesheet" />
@@ -105,9 +109,14 @@
     </div>
 	<script>
       <epc:phrase ref="docklands_script" />
+	
 	j(document).ready(function () {
 		//j('#ep_phraseedit_docklands_btn_radius').click(previewCSS);
   		j('.docklands_admin_widget input[type="button"][value="Preview"]').click(previewCSS);
+
+	        ZeroClipboard.config( { swfPath: "http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.3/ZeroClipboard.swf"});
+        
+        	var client = new ZeroClipboard(j(".btn-clipboard"));
 	});
 	
 	function previewCSS() {  
