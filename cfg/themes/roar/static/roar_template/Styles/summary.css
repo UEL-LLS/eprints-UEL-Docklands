@@ -1,6 +1,10 @@
 /*********************
   Summary Page Styles
 *********************/
+.ep_summary_content {
+
+margin-top: 1em;
+}
 
 .summary-widget {
 
@@ -8,14 +12,13 @@ margin-bottom: 1em;
 
 }
 
-#summary_citation > .tab-content {
-min-height: 7em;
-
-}
-
 /****************
   Citation Style
 *****************/
+
+#summary_citation > .tab-content {
+min-height: 7em;
+}
 
 #summary_citation p {
 
