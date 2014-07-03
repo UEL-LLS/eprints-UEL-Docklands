@@ -46,6 +46,21 @@ background-color: #aaa;
 color: #EEE;
 }
 
+/******************
+  Identifier Style
+*******************/
+
+#summary_identifier .well-dl {
+padding: 7px 52px 7px 7px;
+
+}
+
+#summary_identifier .btn-clipboard {
+position: absolute;
+top: 9.4em;
+right: 15px;
+}
+
 
 /*******************************
  float the buttons to the right
