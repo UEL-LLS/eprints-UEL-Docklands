@@ -13,6 +13,19 @@ min-height: 7em;
 
 }
 
+/****************
+  Citation Style
+*****************/
+
+#summary_citation p {
+
+border: 1px solid gray;
+padding: 5px;
+background: #ddd;
+text-align: center;
+
+}
+
 
 /*******************************
  float the buttons to the right

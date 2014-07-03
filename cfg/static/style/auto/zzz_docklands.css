@@ -2,3 +2,5 @@ pre { overflow: visible!important }
 .dl-uppercase {text-transform:uppercase;}
 #ep_phraseedit_table td {max-width: 8em;word-wrap: break-word;}
 .spacer-b {margin-bottom: 1em}
+
+.btn-group button { margin-left: 1px}
