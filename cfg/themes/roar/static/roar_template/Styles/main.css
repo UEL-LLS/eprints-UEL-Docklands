@@ -67,3 +67,13 @@ border: none;
 ********/
 
 .hidden {display: position: absolute; left -9999px; top:-9999px}
+
+.well-dl {
+
+border: 1px solid gray;
+padding: 5px;
+background: #ddd;
+text-align: center;
+border-radius: 0px;
+
+}
