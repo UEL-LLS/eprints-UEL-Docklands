@@ -57,8 +57,8 @@ padding: 7px 52px 7px 7px;
 
 #summary_identifier .btn-clipboard {
 position: absolute;
-top: 9.4em;
-right: 15px;
+top: -1px;
+right: -1px;
 }
 
 
