@@ -127,6 +127,14 @@ box-shadow: none;
 cursor:default;
 }
 
+/**************
+ Peer reviewed
+**************/
+
+#summary_reviewed span.glyphicon.glyphicon-ok {
+padding-left: 10px;
+}
+
 /**************** 
  Download styles
 ****************/
