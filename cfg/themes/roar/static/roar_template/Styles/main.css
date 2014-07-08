@@ -61,6 +61,15 @@ padding-left: 1em
 .ep_summary_box_title {
 border: none;
 }
+/********
+ Buttons  
+*********/
+
+button.btn:active {
+top: 1px;	
+position: relative
+}
+
 
 /*******
  Helpers
@@ -79,5 +88,5 @@ border-radius: 0px;
 }
 
 #summary_citation .well-dl {
-padding-right: 40px;
+padding-right:3.2em;
 }
