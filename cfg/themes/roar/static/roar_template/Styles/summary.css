@@ -61,6 +61,16 @@ top: -1px;
 right: -1px;
 }
 
+/****************************
+ More Information (metadata)
+****************************/
+
+#summary_metadata .hidden-meta {
+
+display: none!important; */
+visibility: hidden!important;
+}
+
 
 /*******************************
  float the buttons to the right
