@@ -77,3 +77,7 @@ text-align: center;
 border-radius: 0px;
 
 }
+
+#summary_citation .well-dl {
+padding-right: 40px;
+}
