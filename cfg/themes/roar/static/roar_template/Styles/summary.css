@@ -67,10 +67,15 @@ right: -1px;
 
 #summary_metadata .hidden-meta {
 
-display: none!important; */
-visibility: hidden!important;
+display: none;
+visibility: hidden;
 }
 
+#summary_metadata .display-meta {
+
+display: inline!important;
+visibility: visible!important;
+}
 
 /*******************************
  float the buttons to the right
