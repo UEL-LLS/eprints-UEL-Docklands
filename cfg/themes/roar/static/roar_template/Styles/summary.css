@@ -27,9 +27,8 @@ text-align: center;
 }
 
 .btn-clipboard {
-position: absolute;
-top: 0;
-right: 15px;
+position: relative;
+float:right;
 z-index: 10;
 display: block;
 padding: 2px 8px;
