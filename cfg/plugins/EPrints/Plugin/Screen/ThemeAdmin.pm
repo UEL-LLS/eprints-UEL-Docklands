@@ -288,7 +288,7 @@ sub render
 			case "borders" {@phrases = @phrasesBorders;}
 		}
 		
-		foreach my $phraseid ( @phrases )
+		foreach my $phraseid ( @phases )
         	{
 	                my $info = $session->get_lang->get_phrase_info( $phraseid, $session );
 			$rows->appendChild( $self->render_row(
@@ -312,7 +312,7 @@ sub render
 	my $update_div_button = $session->make_element('div', id=>'update_div_button', class=>"col-md-4 col-md-offset-4");
         my $update_form = $session->make_element( 'form', id=>"update_form", class=>"form-horizontal", method=>"post");
 	%buttons = (
-                    reload_repo   => $self->html_phrase("reload_config"),
+                    reload_repo   => $self->phrase("reload_config"),
                     reload_page   => "Reset Changes",#$self->html_phrase("reload_config"),
                     _order   => [ "reload_repo","reload_page" ],
                     _class   => "ep_form_button_bar"
