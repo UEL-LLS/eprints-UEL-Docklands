@@ -264,21 +264,34 @@ sub render
 	# Sections of the theme
 	foreach my $section ( @sections )
 	{
-		my $divSection = $session->make_element( 'div', id=>"docklands_$section",class=>"docklands_admin_widget col-md-12");
+		my $divSection = $session->make_element( 'div', id=>"docklands_$section",class=>"container-fluid docklands_admin_widget col-md-12");
 		my $h3 = $session->make_element( "h3" );
 		$h3->appendChild( $session->make_text(ucfirst($section)));
 		
-		my $table = $session->make_element( "table", id=>"ep_phraseedit_table_$section",class=>"table table-condensed" );
-		my $th = $session->make_element( "th" );
-		$th->appendChild( $session->make_text("Field"));
-		$table->appendChild($th);
-		$th = $session->make_element( "th" );
-		$th->appendChild( $session->make_text("Value"));
-                $table->appendChild($th);
-		$th = $session->make_element( "th" );
-                $table->appendChild($th);
+		#my $table = $session->make_element( "table", id=>"ep_phraseedit_table_$section",class=>"table table-condensed" );
+		my $table = $session->make_element( "div", id=>"ep_phraseedit_table_$section",class=>"col-md-12" );
+		my $headerRow = $session->make_element( "div", class=>"row");
 		
-		my $tr = $session->make_element( "tr" );
+		my $heading = $session->make_element( "div", class=>"col-md-3" );
+		my $strong_heading = $session->make_element("strong");
+		$strong_heading->appendChild( $session->make_text("Field") );
+		$heading->appendChild( $strong_heading );
+		$headerRow->appendChild($heading);
+		
+		$heading = $session->make_element( "div", class=>"col-md-4" );
+		$strong_heading = $session->make_element("strong");
+		$strong_heading->appendChild( $session->make_text("Value"));
+		$heading->appendChild($strong_heading);
+		$headerRow->appendChild($heading);
+		
+		$heading = $session->make_element( "div", class=>"col-md-3" );
+		$headerRow->appendChild($heading);	
+                
+		$table->appendChild($headerRow);
+	
+				
+	
+		my $tr = $session->make_element( "div", class=>"col-md-3iX" );
 		my $rows = $session->make_doc_fragment;
 		my @phrases;		
 		switch ($section){
@@ -324,10 +337,12 @@ sub render
 	$container->appendChild($update_div);
 	
 
-        my $scripts = $session->make_doc_fragment;
+	my $scripts = $session->make_doc_fragment;
+
 	my $ep_save_phrase = EPrints::Utils::js_string( $self->phrase( "save" ) );
         my $ep_reset_phrase = EPrints::Utils::js_string( $self->phrase( "reset" ) );
         my $ep_cancel_phrase = EPrints::Utils::js_string( $self->phrase( "cancel" ) );
+	
 	$scripts->appendChild( $session->make_javascript( <<EOJ ) );
 var ep_phraseedit_phrases = {
 	save: $ep_save_phrase,
@@ -378,16 +393,16 @@ sub render_row
 
 	my( $tr, $td, $div );
 
-	$tr = $session->make_element( "tr", class => "ep_type_$type" );
+	$tr = $session->make_element( "div", class => "ep_type_$type row" );
 
-	$td = $session->make_element( "td" );
+	$td = $session->make_element( "div", class=>"col-md-3" );
 	$tr->appendChild( $td );
 	$td->appendChild( $session->make_text( $phraseid ) );
 
 	#$td = $session->make_element( "td" );
 	#$tr->appendChild( $td );
 
-	$td = $session->make_element( "td" );	
+	$td = $session->make_element( "div", class=>"col-md-4" );	
 	$div = $session->make_element( "div", id => "ep_phraseedit_$phraseid", class => "ep_phraseedit_widget", onclick => "ep_phraseedit_edit(this, ep_phraseedit_phrases);" );
 	if( $xml ne $phrase->{xml} )
         {
@@ -397,7 +412,7 @@ sub render_row
         $td->appendChild( $div );
 	$tr->appendChild( $td );
 	
-	$td = $session->make_element( "td" );	
+	$td = $session->make_element( "div" );	
 	if ($type eq "colours"){
 		# Colour picker html5 thing
 		my $colour = $session->make_text( $string );
