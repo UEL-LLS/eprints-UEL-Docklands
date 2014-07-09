@@ -288,7 +288,7 @@ sub render
 			case "borders" {@phrases = @phrasesBorders;}
 		}
 		
-		foreach my $phraseid ( @phases )
+		foreach my $phraseid ( @phrases )
         	{
 	                my $info = $session->get_lang->get_phrase_info( $phraseid, $session );
 			$rows->appendChild( $self->render_row(
