@@ -111,6 +111,11 @@
       <epc:phrase ref="docklands_script" />
 	
 	j(document).ready(function () {
+		
+		j('.panel-collapse').parent('.panel').children('.panel-heading').children('.panel-title').children('a').append('<span class="glyphicon glyphicon-plus"></span>');
+
+
+
 		//j('#ep_phraseedit_docklands_btn_radius').click(previewCSS);
   		j('.docklands_admin_widget input[type="button"][value="Preview"]').click(previewCSS);
 

@@ -131,13 +131,17 @@ cursor:default;
  Peer reviewed
 **************/
 
-#summary_reviewed span.glyphicon.glyphicon-ok {
+#summary_reviewed span {
 padding-left: 10px;
 }
 
 /**************** 
  Download styles
 ****************/
+
+.panel-title span {
+	float: right;
+}
 
 .ep_doc_icon {
 float: right;
