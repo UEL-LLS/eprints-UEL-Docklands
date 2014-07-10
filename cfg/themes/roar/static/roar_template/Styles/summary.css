@@ -147,6 +147,13 @@ padding-left: 10px;
 float: right;
 }
 
+#summary_links .panel-body p {
+float: left;
+width: 70%
+}
+#summary_links .panel-body a {
+float: right;
+}
 
 .altmetric_error {
 display: none;
