@@ -2,7 +2,7 @@ j(document).ready(function () {
         //stuff for the summary page
 
                 //add the + to the download panels
-                j('.panel-collapse').parent('.panel').children('.panel-heading').children('.panel-title').children('a').append('<span class="glyphicon glyphicon-plus"></span>');
+                //j('.panel-collapse').parent('.panel').children('.panel-heading').children('.panel-title').children('a').append('<span class="glyphicon glyphicon-plus"></span>');
 
                 //replace the img icons with nice font awesome ones
                 j('.ep_doc_icon[src$="fileicons/application_msword.png"]').replaceWith('<i class="fa fa-file-word-o fa-5x"></i>');
