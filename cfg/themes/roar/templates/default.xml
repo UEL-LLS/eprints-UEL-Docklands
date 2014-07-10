@@ -16,8 +16,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
-    
+
+    <!-- Font Awesome by Dave Gandy - http://fontawesome.io -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />   
+ 
     <!-- Expander -->
     <script src="{$config{rel_path}}/roar_template/Scripts/jquery.expander.min.js" />
     <!--script src="https://rawgit.com/kswedberg/jquery-expander/master/jquery.expander.min.js" /-->
@@ -50,7 +52,53 @@
     <epc:pin ref="pagetop" />
 
 <header>
-<epc:phrase ref="custom_header_html_new"/>
+<div id="uel-navbackground">
+        <div id="uel-navbar" class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header uel">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#lowernav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar" />
+                <span class="icon-bar" />
+                <span class="icon-bar" />
+              </button>
+              <!--a class="navbar-brand brand hidden-xs" href="http://www.uel.ac.uk" /-->
+              <a class="navbar-brand" href="http://www.uel.ac.uk">UEL Home</a>
+              <h1 class="sr-only">
+                <epc:phrase ref="archive_name" />
+              </h1>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <nav class="collapse navbar-collapse" id="topnav">
+              <ul class="nav navbar-nav">
+                <li><a href="http://www.uel.ac.uk/staff/">Staff</a></li>
+                <li><a href="http://www.uel.ac.uk/students/">Students</a></li>
+                <li><a href="http://www.uel.ac.uk/contactus/">Contact Us</a></li>
+                <!--li class="active"><a href="{$config{http_url}}">ROAR</a></li-->
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="glyphsize"><span class="glyphicon glyphicon-earphone"></span></li>
+                <li class="no-hover"><a href="tel:+44 (0)20 8223 3000">+44 (0)20 8223 3333</a></li>
+              </ul>
+            </nav> <!-- /.navbar-collapse #topnav-->
+          </div> <!-- /.container-fluid -->
+         </div> <!-- /#uel-navbar -->
+
+
+         <nav class="collapse navbar-collapse" id="lowernav">
+            <div class="logo-wrapper hidden-xs">
+                <a href="/"><img src="http://www.uel.ac.uk/wwwmedia/uel2014/img/uel-logo.png" /></a>
+            </div>
+          <ul class="nav navbar-nav">
+            <li><a href="{$config{http_url}}"><span class="dl-uppercase"><epc:phrase ref="archive_name"/></span> Home</a></li>
+            <li><a href="{$config{http_url}}/information.html"><epc:phrase ref="template/navigation:about" /></a></li>
+            <li><a href="{$config{http_url}}/view/" menu="ep_tm_menu"><epc:phrase ref="template/navigation:browse" /></a></li>
+            <li><a href="{$config{http_url}}/view/divisions/">Browse by School</a></li>
+            <li><a href="{$config{http_url}}/view/creators/">Browse by Author</a></li>
+          </ul>
+         </nav> <!-- /#lowernav -->
+      </div> <!-- /#navbackground -->
 </header>
 <aside id="add_item" class="visible-md visible-lg shadow border">
                 <h3>
@@ -111,17 +159,27 @@
       <epc:phrase ref="docklands_script" />
 	
 	j(document).ready(function () {
+	//stuff for the summary page
 		
+		//add the + to the download panels
 		j('.panel-collapse').parent('.panel').children('.panel-heading').children('.panel-title').children('a').append('<span class="glyphicon glyphicon-plus"></span>');
 
+		//replace the img icons with nice font awesome ones
+		j('.ep_doc_icon[src$="fileicons/application_msword.png"]').replaceWith('<i class="fa fa-file-word-o fa-5x"></i>');
+		j('.ep_doc_icon[src$="fileicons/application_pdf.png"]').replaceWith('<i class="fa fa-file-pdf-o fa-5x"></i>');
+		j('.ep_doc_icon[src$="fileicons/text.png"]').replaceWith('<i class="fa fa-file-text-o fa-5x"></i>');
+		j('.ep_doc_icon[src$="fileicons/other.png"]').replaceWith('<i class="fa fa-file-o fa-5x"></i>');
+		j('.ep_doc_icon[src$="fileicons/unknown.png"]').replaceWith('<i class="fa fa-file-o fa-5x"></i>');
+		j('.ep_doc_icon[src$="fileicons/archive.png"]').replaceWith('<i class="fa fa-file-zip-o fa-5x"></i>');
 
+		// Using  clipbpar thing 
+	        ZeroClipboard.config( { swfPath: "http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.3/ZeroClipboard.swf"});
+        	var client = new ZeroClipboard(j(".btn-clipboard"));
 
 		//j('#ep_phraseedit_docklands_btn_radius').click(previewCSS);
   		j('.docklands_admin_widget input[type="button"][value="Preview"]').click(previewCSS);
 
-	        ZeroClipboard.config( { swfPath: "http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.3/ZeroClipboard.swf"});
         
-        	var client = new ZeroClipboard(j(".btn-clipboard"));
 	});
 	
 	function previewCSS() {  
