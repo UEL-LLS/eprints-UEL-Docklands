@@ -5,6 +5,12 @@ body {
 font-size: 10px!important;
 }
 
+/*******
+ Roboto
+********/
+body {font-family: 'Roboto', sans-serif;}
+h1 {font-family: 'Roboto Slab', serif;}
+a {font-family: 'Roboto Condensed', sans-serif;}
 
 #add_item {
 
