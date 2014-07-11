@@ -180,3 +180,7 @@ border: none;
 //background: #0094d5;
 color: #fff;
 }
+
+#summmary_links a.btn, #summmary_links a.btn:visited {
+color: #fff
+}
