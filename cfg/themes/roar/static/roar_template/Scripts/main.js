@@ -19,7 +19,7 @@ j(document).ready(function () {
                 //j('#ep_phraseedit_docklands_btn_radius').click(previewCSS);
                 j('.docklands_admin_widget input[type="button"][value="Preview"]').click(previewCSS);
 
-		j('a:contains("Request a copy")').addClass('btn');
+		j('a:contains("Request a copy")').addClass('btn btn-docklands-prime');
 
         });
 
