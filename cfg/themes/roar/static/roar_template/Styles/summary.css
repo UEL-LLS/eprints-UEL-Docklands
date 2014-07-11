@@ -160,9 +160,9 @@ display: none;
 }
 
 
-/***********
- Test stuff
-***********/
+/******
+ Links 
+*******/
 
 .modal-lg {
 width: 80%
@@ -172,12 +172,11 @@ padding: 0;
 }
 
 iframe {
-
 width: 100%;
 height: 30em;
 border: none;
 }
 .docklands-modal-header {
-background: #0094d5;
+//background: #0094d5;
 color: #fff;
 }

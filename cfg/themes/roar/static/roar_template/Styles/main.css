@@ -51,6 +51,10 @@ line-height: 1.42857143;
 color: #fff
 }
 
+#page h1 a {
+color: #fff
+}
+
 .glyphsize {font-size: 18px}
 
 #file_aside > div {

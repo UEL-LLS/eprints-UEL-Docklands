@@ -31,7 +31,7 @@
                 j('#ep_tm_menu_tools, .ep_tm_key_tools').addClass('nav nav-pills nav-stacked');
 
 		//pretty tabs
-                var tabs = j('#ep_tabs_tabs, #ep_admin_tabs_tabs, #ep_workflow_views_tabs, #ep_eprint_view_tabs, #_tabs');
+                var tabs = j('#ep_tabs_tabs, #ep_admin_tabs_tabs, #ep_workflow_views_tabs, #ep_eprint_view_tabs,#ep_eprint_views_tabs #_tabs');
                 //var selected_tabs = j('#ep_tabs_tabs .ep_tab_selected, #ep_admin_tabs_tabs .ep_tab_selected, #ep_workflow_views_tabs .ep_tab_selectedi, #_tabs .ep_tab_selected');
                 var selected_tabs = j('.ep_tab_selected');
                 var li_tabs = j('#ep_tabs_tabs li, #ep_admin_tabs_tabs li, #ep_workflow_views_tabs li, #ep_eprint_view_tabs li, #_tabs li');
@@ -104,11 +104,12 @@
                 background-color: #<epc:phrase ref="docklands_colour_1"/>;
                 color: #fff;
         }
-        .btn-docklands-prime,.panel-docklands-fp .panel-heading,.panel-docklands-prime .panel-heading {
+        .btn-docklands-prime,.panel-docklands-fp .panel-heading,.panel-docklands-prime .panel-heading,.docklands-modal-header {
                 background-color: #<epc:phrase ref="docklands_colour_1"/>;
                 color: #fff;
                 border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important;
         }
+	.modal-content { border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important; }
         .btn-docklands-prime:hover {
                 background-color: #<epc:phrase ref="docklands_colour_2"/>;
                 color: #fff;
