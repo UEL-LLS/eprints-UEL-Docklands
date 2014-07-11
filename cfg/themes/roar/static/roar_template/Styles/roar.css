@@ -8,6 +8,7 @@ font-size: 10px!important;
 /*******
  Roboto
 ********/
+@import url(http://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Roboto+Condensed:400,700);
 body {font-family: 'Roboto', sans-serif;}
 h1 {font-family: 'Roboto Slab', serif;}
 a {font-family: 'Roboto Condensed', sans-serif;}
