@@ -15,7 +15,7 @@ min-height: 5em;
 min-height: 21.1em
 }
 
-.panel-docklands-fp > .panel-img > .seemore {
+.panel-docklands-fp .seemore {
 position: absolute;
 top: 31%;
 width: 90%;
