@@ -33,7 +33,7 @@ transition:visibility 0s linear 0.5s,opacity 0.5s linear;
 
 .seemore a, .seemore a {
 text-decoration: none;
-color: #333
+color: #333!important
 }
 
 .panel-docklands-fp:hover .seemore {
