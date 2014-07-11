@@ -116,7 +116,7 @@
         <form method="get" accept-charset="utf-8" action="{$config{http_cgiurl}}/search" style="display:inline">
           <div id="search_box" class="col-md-offset-0 col-md-2 col-sm-10 col-xs-8">
             <i class="glyphicon glyphicon-search" />
-            <input type="search" placeholder="Search the repository" class="ep_tm_searchbarboxX form-control" name="q" />
+            <input type="search" placeholder="Search the repository" class="form-control" name="q" />
           </div>
           <div class="col-md-2 col-sm-2 col-xs-4">
             <button id="search_button" class="btn btn-docklands-prime hidden-lg hidden-md hidden-sm" value="{phrase('lib/searchexpression:action_search')}" type="submit" name="_action_search">Search</button>
@@ -137,7 +137,7 @@
 	</div>
       </nav>
       <main id="page" class="col-md-10 col-sm-10 col-xs-12">
-        <div class="ep_tm_page_content shadow border container-fluid">
+        <div class="shadow border container-fluid">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="main_title">
 		<h1 class="hidden-xs">
             		<epc:pin ref="title" />
