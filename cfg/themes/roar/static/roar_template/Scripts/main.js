@@ -21,3 +21,10 @@ j(document).ready(function () {
 
 
         });
+
+if (window.top!=window.self)
+        {
+                j('header, #repo_search, nav, #add_item,h1, footer, .modal-button').remove();
+                j('#page').children('.shadow').removeClass('shadow');
+
+        }
