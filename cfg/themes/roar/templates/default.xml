@@ -197,7 +197,6 @@
 		}
 
 	}
-	
 	</script>
 	<!--script src="{$config{rel_path}}/roar_template/Scripts/main.js" /-->
 	<script src="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Scripts/main.js" />
