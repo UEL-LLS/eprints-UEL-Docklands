@@ -208,5 +208,6 @@ margin-top: 8em;
 .panel-card {
 margin-left: 15px;
 margin-right: 15px;
-height: 4rem
+min-height: 4rem;
+height: auto;
 }
