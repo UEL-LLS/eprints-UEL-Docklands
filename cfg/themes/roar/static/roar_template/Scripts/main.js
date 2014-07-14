@@ -37,9 +37,9 @@ j(document).ready(function () {
    		.replace(/<\/tr>/gi, "</li>")
    		.replace(/<td/gi, "<span")
    		.replace(/<\/td>/gi, "</span>")
-   		.replace(/<\/tbody/gi, "<\/ul"
-		, function() {
-			j('.ep_search_result').addClass('panel panel-card');
+   		.replace(/<\/tbody/gi, "<\/ul")
+		//, function() {
+		//	j('.ep_search_result').addClass('panel panel-card');
 				
 			//j('.panel-card').children('span').css('padding-left','0');
 			//j('.panel-card 	span:nth-child(1)').addClass('col-md-1');
@@ -47,7 +47,7 @@ j(document).ready(function () {
 			//j('.panel-card 	span:nth-child(3)').addClass('col-md-3');
 			//j('.ep_search_result').removeClass().addClass('panel panel-default panel-card');
 		
-		})
+		//})
 	);
 });
 
