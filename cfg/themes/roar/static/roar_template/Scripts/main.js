@@ -50,7 +50,7 @@ j(document).ready(function () {
 		//})
 	);
 	j('.ep_search_result').addClass('panel panel-card');
-		j('this').children('span').css('padding-left','0');
+	j('.ep_search_result span').css('padding-left','0');
 });
 
 if (window.top!=window.self)
