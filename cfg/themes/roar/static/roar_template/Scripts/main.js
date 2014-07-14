@@ -28,8 +28,20 @@ j(document).ready(function () {
 	j('#requester_email, #reason').removeClass().addClass('form-control');
 	j('#requester_email, #reason').closest('table').removeClass().addClass('table')
 	j('#requester_email, #reason').closest('td').css('border-top','none');
+
+
+	//Turn the latest_tool into a nice list of divs
+	j('table.ep_latest_tool_list').replaceWith( j('table').html()
+   		.replace(/<tbody/gi, "<ul id='latest_tool'")
+   		.replace(/<tr/gi, "<li")
+   		.replace(/<\/tr>/gi, "</li>")
+   		.replace(/<td/gi, "<span")
+   		.replace(/<\/td>/gi, "</span>")
+   		.replace(/<\/tbody/gi, "<\/oul")
+	);	
+	j('.ep_search_result').removeClass().addClass('panel panel-default panel-card');
 	
-        });
+});
 
 if (window.top!=window.self)
         {
