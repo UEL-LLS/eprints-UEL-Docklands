@@ -37,7 +37,7 @@ j(document).ready(function () {
    		.replace(/<\/tr>/gi, "</li>")
    		.replace(/<td/gi, "<span")
    		.replace(/<\/td>/gi, "</span>")
-   		.replace(/<\/tbody/gi, "<\/oul")
+   		.replace(/<\/tbody/gi, "<\/oul"
 		, function() {
 		
 		
