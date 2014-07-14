@@ -32,13 +32,17 @@ j(document).ready(function () {
 
 	//Turn the latest_tool into a nice list of divs
 	j('table.ep_latest_tool_list').replaceWith( j('table').html()
-   		.replace(/<tbody/gi, "<ul class='list-unstyled' id='latest_tool'")
+   		.replace(/<tbody/gi, "<ul class='list-unstyled row' id='latest_tool'")
    		.replace(/<tr/gi, "<li")
    		.replace(/<\/tr>/gi, "</li>")
    		.replace(/<td/gi, "<span")
    		.replace(/<\/td>/gi, "</span>")
    		.replace(/<\/tbody/gi, "<\/oul")
-	);	
+	);
+	j('.panel-card').children('span').css('padding-left','0');
+	j('.panel-card 	span:nth-child(1)').addClass('col-md-1');
+	j('.panel-card 	span:nth-child(2)').addClass('col-md-8');
+	j('.panel-card 	span:nth-child(3)').addClass('col-md-3');
 	j('.ep_search_result').removeClass().addClass('panel panel-default panel-card');
 	
 });
