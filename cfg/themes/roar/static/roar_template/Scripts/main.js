@@ -23,6 +23,12 @@ j(document).ready(function () {
 	//Turn the request a copy link into a button
 	j('a:contains("Request a copy")').addClass('btn btn-docklands-prime');
 
+
+	//Add form classes in Request a copy page
+	j('#requester_email, #reason').removeClass().addClass('form-control');
+	j('#requester_email, #reason').closest('table').removeClass().addClass('table')
+	j('#requester_email, #reason').closest('td').css('border-top','none');
+	
         });
 
 if (window.top!=window.self)
