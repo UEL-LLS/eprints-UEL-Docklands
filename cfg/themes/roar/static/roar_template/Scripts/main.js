@@ -41,11 +41,11 @@ j(document).ready(function () {
 		, function() {
 			j('.ep_search_result').addClass('panel panel-card');
 				
-			j('.panel-card').children('span').css('padding-left','0');
-			j('.panel-card 	span:nth-child(1)').addClass('col-md-1');
-			j('.panel-card 	span:nth-child(2)').addClass('col-md-8');
-			j('.panel-card 	span:nth-child(3)').addClass('col-md-3');
-			j('.ep_search_result').removeClass().addClass('panel panel-default panel-card');
+			//j('.panel-card').children('span').css('padding-left','0');
+			//j('.panel-card 	span:nth-child(1)').addClass('col-md-1');
+			//j('.panel-card 	span:nth-child(2)').addClass('col-md-8');
+			//j('.panel-card 	span:nth-child(3)').addClass('col-md-3');
+			//j('.ep_search_result').removeClass().addClass('panel panel-default panel-card');
 		
 		})
 	);
