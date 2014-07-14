@@ -12,7 +12,7 @@ j(document).ready(function () {
 	j('.ep_doc_icon[src$="fileicons/unknown.png"]').replaceWith('<i class="ep_doc_icon fa fa-file-o fa-5x"></i>');
 	j('.ep_doc_icon[src$="fileicons/archive.png"]').replaceWith('<i class="ep_doc_icon fa fa-file-zip-o fa-5x"></i>');
 	j('.ep_doc_icon[src$="fileicons/image.png"]').replaceWith('<i class="ep_doc_icon fa fa-file-image-o fa-5x"></i>');
-	j('.panel-card .ep_doc_icon').removeClass('fa-5x').addClass('fa-3x');
+	j('.panel-card i').addClass('fa-3x');
 
 	// Using  clipboard thing
 	ZeroClipboard.config( { swfPath: "http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.3/ZeroClipboard.swf"});
