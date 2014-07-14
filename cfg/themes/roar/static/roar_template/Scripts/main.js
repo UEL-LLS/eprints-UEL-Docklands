@@ -49,6 +49,7 @@ j(document).ready(function () {
 		
 		//})
 	);
+	j('.ep_search_result').addClass('panel panel-card');
 });
 
 if (window.top!=window.self)
