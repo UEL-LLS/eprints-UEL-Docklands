@@ -47,7 +47,8 @@ j(document).ready(function () {
 			j('.panel-card 	span:nth-child(3)').addClass('col-md-3');
 			j('.ep_search_result').removeClass().addClass('panel panel-default panel-card');
 		
-	})
+		})
+	);
 });
 
 if (window.top!=window.self)
