@@ -49,7 +49,9 @@ j(document).ready(function () {
 		
 		//})
 	);
-	j('.ep_search_result').addClass('panel panel-card');
+	j('.ep_search_result').addClass('panel panel-card', function(){
+		j('.panel-card').children('span').css('padding-left','0');
+	});
 });
 
 if (window.top!=window.self)
