@@ -42,10 +42,11 @@ j(document).ready(function () {
 	j('.ep_search_result').addClass('panel panel-card row');
 	j('.ep_search_result span').css('padding-left','0');
 	
-	j('.panel-card').children('span').css('padding-left','0');
-        j('.panel-card span:nth-child(1)').addClass('col-md-1');
-        j('.panel-card span:nth-child(2)').addClass('col-md-8');
-        j('.panel-card span:nth-child(3)').addClass('col-md-3').attr('align','right');
+	//j('.panel-card').children('span').css('padding-left','0');
+	j('.panel-card span').css('padding-left','0');
+        j('.panel-card > span:nth-child(1)').addClass('col-md-1');
+        j('.panel-card > span:nth-child(2)').addClass('col-md-8');
+        j('.panel-card > span:nth-child(3)').addClass('col-md-3').attr('align','right');
 });
 
 if (window.top!=window.self)
