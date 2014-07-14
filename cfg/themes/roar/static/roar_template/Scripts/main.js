@@ -32,7 +32,7 @@ j(document).ready(function () {
 
 	//Turn the latest_tool into a nice list of divs
 	j('table.ep_latest_tool_list').replaceWith( j('table').html()
-   		.replace(/<tbody/gi, "<ul id='latest_tool'")
+   		.replace(/<tbody/gi, "<ul class='list-unstyled' id='latest_tool'")
    		.replace(/<tr/gi, "<li")
    		.replace(/<\/tr>/gi, "</li>")
    		.replace(/<td/gi, "<span")
