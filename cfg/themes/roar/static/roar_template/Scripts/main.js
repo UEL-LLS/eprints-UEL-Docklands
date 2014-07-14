@@ -11,11 +11,8 @@ j(document).ready(function () {
 	j('.ep_doc_icon[src$="fileicons/other.png"]').replaceWith('<i class="ep_doc_icon fa fa-file-o fa-5x"></i>');
 	j('.ep_doc_icon[src$="fileicons/unknown.png"]').replaceWith('<i class="ep_doc_icon fa fa-file-o fa-5x"></i>');
 	j('.ep_doc_icon[src$="fileicons/archive.png"]').replaceWith('<i class="ep_doc_icon fa fa-file-zip-o fa-5x"></i>');
-	//j('.ep_doc_icon[src$="fileicons/image.png"]').replaceWith('<i class="ep_doc_icon fa fa-file-image-o fa-5x"></i>');
-	j('.ep_doc_icon[src$="fileicons/image.png"]').replaceWith('<i class="ep_doc_icon fa fa-file-image-o"></i>');
+	j('.ep_doc_icon[src$="fileicons/image.png"]').replaceWith('<i class="ep_doc_icon fa fa-file-image-o fa-5x"></i>');
 	
-	j('.panel-docklands-prime i').addClass('fa-5x');
-	j('.panel-card i').addClass('fa-3x');
 
 	// Using  clipboard thing
 	ZeroClipboard.config( { swfPath: "http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.3/ZeroClipboard.swf"});
