@@ -13,20 +13,22 @@ This package also works with my Cookies package allowing you to theme the cookie
 -----
 Change Log:
 
-0.2.2
+0.2.9
 
-Added remove stylesheet for development work. Focus on summary page and front page. 
-
-
-0.2 
-
-Update to link to rawgit to assist Tim with development
-
-0.1.2
-
-Updated to fix LibXML related issue
+Switched to Bootstrap 3.2.0
 
 
-0.11  
+0.2.8 Updates for Data.uel to use main.js for iframe 
 
-Patched by Rory McNicholl to make it work and remove some glaring errors. 
+0.2.5 Added ZeroClipboard and styled summary page more 
+
+0.2.3 More front page stuff added to roar theme
+
+0.2.2 Added remove stylesheet for development work. Focus on summary page and front page. 
+
+0.2 Update to link to rawgit to assist Tim with development
+
+
+0.1.2 Updated to fix LibXML related issue
+
+0.11  Patched by Rory McNicholl to make it work and remove some glaring errors. 
