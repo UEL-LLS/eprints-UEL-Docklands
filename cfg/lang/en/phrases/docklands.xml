@@ -96,7 +96,7 @@
 <epp:phrase id="initial_css">
 	.btn-docklands {
                 background-color: #<epc:phrase ref="docklands_colour_2"/>;
-                color: #fff;
+                color: #fff!important;
                 border-radius: <epc:phrase ref="docklands_btn_radius"/>px;
         }
 
