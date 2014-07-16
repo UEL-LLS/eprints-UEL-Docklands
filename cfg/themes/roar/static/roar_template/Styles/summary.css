@@ -164,6 +164,10 @@ display: none;
  Links 
 *******/
 
+.modal-open {
+overflow: auto!important
+}
+
 .modal-lg {
 width: 80%
 }
