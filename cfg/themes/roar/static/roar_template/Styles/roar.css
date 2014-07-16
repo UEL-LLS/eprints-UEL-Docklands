@@ -149,6 +149,7 @@ padding-bottom: 10px!important
 #lowernav {
 padding-top: 1.3em;
 /*left: 8.2em;   Causing right side whitespace*/
+left: 0em;
 margin-left: 8.2em;
 position: relative;
 }
