@@ -20,7 +20,7 @@ background-color: #fff;
 
 #main_page {font-size: 14px}
 
-#main_title {margin-left: -15px}
+#main_title {margin-left: -15px;margin-bottom: 3em;}
 
 .ep_tm_key_tools li {border: none!important}
 
