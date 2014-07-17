@@ -201,6 +201,10 @@ border-top-left-radius: 0px;
 border-bottom: 0px solid transparent!important
 }
 
+a.btn-docklands-prime:hover {
+color: #fff
+}
+
 /************
 ************/
 
