@@ -201,7 +201,7 @@ border-top-left-radius: 0px;
 border-bottom: 0px solid transparent!important
 }
 
-a.btn-docklands-prime:hover {
+a.btn-docklands-prime:visited {
 color: #fff
 }
 
