@@ -96,6 +96,12 @@ padding: 8px!important;
 border-top: 1px solid #ddd!important;
 }
 
+#sumaary_metadata .table td {
+overflow: hidden;
+max-width: 24em;
+word-wrap: break-word;
+}
+
 /*******************************
  float the buttons to the right
 *******************************/
