@@ -16,7 +16,7 @@ color: #050505;
 background-color: #fff;
 }
 
-#main_page > nav, #main_page > main {margin-bottom: 1em}
+#main_page > nav, #main_page > main {margin-bottom: 4em}
 
 #main_page {font-size: 14px}
 
@@ -74,6 +74,16 @@ top: 1px;
 position: relative
 }
 
+/*******
+ Footer 
+*******/
+.docklands_footer {
+font-size: 80%;
+border-top-width: 2px;
+border-top-style: solid;
+padding: 1em 0 0 0;
+clear: both;
+}
 
 /*******
  Helpers
@@ -93,4 +103,11 @@ border-radius: 0px;
 
 #summary_citation .well-dl {
 padding-right:3.2em;
+}
+
+.display-div {
+opacity:1!important;
+transition-delay:0s!important;
+visibility: visible!important;
+width: 100%;
 }
