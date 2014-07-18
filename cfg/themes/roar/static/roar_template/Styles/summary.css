@@ -214,11 +214,11 @@ color: #fff
 
 .external-link-img {
 width: 122px;
-display: block;
+display: inline-block;
 background-size: contain;
 background-repeat: no-repeat;
 background-position: 0px 0px;
-
+vertical-align: middle;
 }
 .figshare-img {
 background-image: url('http://files.figshare.com/223967/fig.share_FullColour.jpg');
