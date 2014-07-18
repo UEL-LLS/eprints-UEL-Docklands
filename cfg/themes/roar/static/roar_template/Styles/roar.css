@@ -212,7 +212,23 @@ a.btn-docklands-prime:visited {
 color: #fff
 }
 
+.btn-docklands-data {
+background-color: #FF8700;
+color: #fff
+}
+.btn-docklands-data:hover {
+background-color: #BF6500;
+color: #fff
+}
 
+.btn-docklands-roar {
+background-color: #0094d5;
+color: #fff
+}
+.btn-docklands-roar:hover {
+background-color: #005e9f;
+color: #fff
+}
 /************
 ************/
 
