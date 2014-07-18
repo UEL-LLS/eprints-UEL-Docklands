@@ -212,15 +212,28 @@ color: #fff
  External Links
 ***************/
 
-.figshare-img {
-background-image: url('http://files.figshare.com/223967/fig.share_FullColour.jpg');
-background-position: 0px 0px;
-background-repeat: no-repeat;
+.external-link-img {
 width: 122px;
-height: 44px;
 display: block;
 background-size: contain;
+background-repeat: no-repeat;
+background-position: 0px 0px;
+
 }
+.figshare-img {
+background-image: url('http://files.figshare.com/223967/fig.share_FullColour.jpg');
+height: 44px;
+}
+.ukda-img {
+background-image: url("https://dl.dropboxusercontent.com/u/135459/ukda.png");
+height: 24px
+}
+.archds-img {
+background-color: #cc0000;
+background-image: url("http://archaeologydataservice.ac.uk/images/ads_logo_white.png");
+height: 26px;
+}
+
 
 /******
  Other
