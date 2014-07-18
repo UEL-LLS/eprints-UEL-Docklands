@@ -208,6 +208,20 @@ color: #fff;
 color: #fff
 }
 
+/***************
+ External Links
+***************/
+
+.figshare-img {
+background-image: url('http://files.figshare.com/223967/fig.share_FullColour.jpg');
+background-position: 0px 0px;
+background-repeat: no-repeat;
+width: 122px;
+height: 44px;
+display: block;
+background-size: contain;
+}
+
 /******
  Other
 ******/

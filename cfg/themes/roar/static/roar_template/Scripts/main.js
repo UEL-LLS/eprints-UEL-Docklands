@@ -14,6 +14,9 @@ j(document).ready(function () {
 	j('.ep_doc_icon[src$="fileicons/image.png"]').replaceWith('<i class="ep_doc_icon fa fa-file-image-o fa-5x"></i>');
 	
 
+	//replace external link span content with repo logo	
+	j('.figshare').replaceWith('<span class="figshare-img"></span>');
+
 	// Using  clipboard thing
 	ZeroClipboard.config( { swfPath: "http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.3/ZeroClipboard.swf"});
 	var client = new ZeroClipboard(j(".btn-clipboard"));
