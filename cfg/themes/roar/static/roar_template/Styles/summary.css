@@ -173,11 +173,6 @@ position: relative;
 left: 7%;
 }
 
-.altmetric_error {
-display: none;
-}
-
-
 /******
  Links 
 *******/
@@ -207,9 +202,10 @@ color: #fff;
 color: #fff
 }
 
+/******
+ Other
+******/
 
-/***************
- Request a copy
-***************/
-
-
+.altmetric_error {
+display: none;
+}
