@@ -163,6 +163,16 @@ width: 70%
 float: right;
 }
 
+
+#summary_links .panel-title a , #summary_downloads .panel-title a {
+width: 95%;
+display: inline-block;
+}
+#summary_links .panel-title > a > span , #summary_downloads .panel-title > a > span {
+position: relative;
+left: 7%;
+}
+
 .altmetric_error {
 display: none;
 }
