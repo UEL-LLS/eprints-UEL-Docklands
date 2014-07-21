@@ -15,7 +15,7 @@ j(document).ready(function () {
 	
 
 	//replace external link span content with repo logo	
-	j('.figshare').replaceWith('<span class="figshare-img"></span>');
+	j('.figshare').replaceWith('<span class="external-link-img figshare-img"></span>');
 
 	// Using  clipboard thing
 	ZeroClipboard.config( { swfPath: "http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.3/ZeroClipboard.swf"});
