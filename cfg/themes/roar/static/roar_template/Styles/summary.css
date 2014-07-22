@@ -152,6 +152,8 @@ padding-left: 10px;
 /**************** 
  Download styles
 ****************/
+.panel { margin-top: 5px; }
+
 
 .panel-title span {
 	float: right;
@@ -211,6 +213,10 @@ color: #fff
 /***************
  External Links
 ***************/
+.datauel {
+font-weight: 600;
+color: #BF6500;
+}
 
 .external-link-img {
 width: 122px;
