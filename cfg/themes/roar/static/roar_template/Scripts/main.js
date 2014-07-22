@@ -15,7 +15,6 @@ j(document).ready(function () {
 	
 
 	//replace external link span content with repo logo	
-	j('.data.uel').replaceWith('<span class="data.uel-logo">Data.uel</span>');
 	j('.figshare').replaceWith('<span class="external-link-img figshare-img"></span>');
 	j('.ukda').replaceWith('<span class="external-link-img ukda-img"></span>');
 	j('.reshare').replaceWith('<span class="external-link-img reshare-img"></span>');
