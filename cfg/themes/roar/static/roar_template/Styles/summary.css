@@ -221,16 +221,27 @@ background-position: 0px 0px;
 vertical-align: middle;
 }
 .figshare-img {
-background-image: url('http://ueltest.da.ulcc.ac.uk/roar_template/Images/linked_resources/figshare.jpg');
+background-image: url('https://dl.dropboxusercontent.com/u/135459/linked_resources/figshare.png');
 height: 44px;
 }
 .ukda-img {
-background-image: url("https://dl.dropboxusercontent.com/u/135459/ukda.png");
+background-image: url("https://dl.dropboxusercontent.com/u/135459/linked_resources/ukda.png");
 height: 24px
 }
 .archds-img {
-background-color: #cc0000;
-background-image: url("http://archaeologydataservice.ac.uk/images/ads_logo_white.png");
+background-image: url("https://dl.dropboxusercontent.com/u/135459/linked_resources/ads.png");
+height: 26px;
+}
+.reshare-img { 
+background-image: url("https://dl.dropboxusercontent.com/u/135459/linked_resources/reshare.png");
+height: 26px;
+}
+.nerc-img {
+background-image: url("https://dl.dropboxusercontent.com/u/135459/linked_resources/nerc.png");
+height: 26px;
+}
+.dryad-img {
+background-image: url("https://dl.dropboxusercontent.com/u/135459/linked_resources/dryad.png");
 height: 26px;
 }
 
