@@ -1,7 +1,7 @@
 j(document).ready(function () {
 
 	//menu manipluation
-	j('.ep_tm_key_tools').removeClass('.ep_tm_key_tools').addClass('navbar-collapse collapse').attr('id','ep_menu');
+	j('.ep_tm_key_tools').removeClass('ep_tm_key_tools').addClass('navbar-collapse collapse').attr('id','ep_menu');
 
 
         //stuff for the summary page
