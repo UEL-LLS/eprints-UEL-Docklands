@@ -1,5 +1,5 @@
 /************************
-  Data Front Page Styles
+  Front Page Styles
 *************************/
 
 .panel-docklands-fp  .background-image {
@@ -9,7 +9,7 @@ height: 100%;
 }
 
 .panel-docklands-fp {
-min-height: 5em;
+min-height: 10em;
 }
 .panel-docklands-fp.data {
 min-height: 21.1em
