@@ -18,7 +18,7 @@ j(document).ready(function () {
 	j('.figshare').replaceWith('<span class="external-link-img figshare-img"></span>');
 	j('.ukda').replaceWith('<span class="external-link-img ukda-img"></span>');
 	j('.reshare').replaceWith('<span class="external-link-img reshare-img"></span>');
-	j('.archaeology_ds').replaceWith('<span class="external-link-img archaeolofy_ds-img"></span>');
+	j('.archaeology_ds').replaceWith('<span class="external-link-img archds-img"></span>');
 	j('.nerc').replaceWith('<span class="external-link-img nerc-img"></span>');
 	j('.dryad').replaceWith('<span class="external-link-img dryad-img"></span>');
 	j('.other').replaceWith('<span class="external-other"></span>');
