@@ -84,6 +84,7 @@ padding: 15px;
 font-size: 18px;
 line-height: 20px;
 height: 50px;
+float: left;
 }
 #header_icons a span {
 color: #fff;
