@@ -16,9 +16,9 @@ color: #050505;
 background-color: #fff;
 }
 
-#main_page > main, #main_page > nav {margin-bottom: 4em}
+#main_page > main, #main_page > nav {margin-bottom: 0em}
 @media screen and (min-width:768px){
-#main_page > nav {margin-bottom: 0}
+#main_page > main, #main_page > nav {margin-bottom: 4em}
 }
 
 #main_page {font-size: 14px}
