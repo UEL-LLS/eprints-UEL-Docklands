@@ -90,6 +90,20 @@ float: left;
 color: #fff;
 }
 
+/***************
+ Left hand menu
+***************/
+
+#ep_menu_toggle {
+border-color: #0094d5;
+top: -5rem;
+}
+#ep_menu_toggle span.icon-bar {
+background-color: #0094d5;
+}
+
+
+
 @media screen and (min-width:768px){
 
 #topnav > ul > li.active {

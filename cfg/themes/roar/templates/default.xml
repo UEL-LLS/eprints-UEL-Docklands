@@ -155,7 +155,13 @@
     <div id="main_page" class="container-fluid">
       <nav class="col-md-2 col-sm-2 col-xs-12">
         <div class="shadow border">
-	 <h2 class="sr-only">Menu</h2>
+	 <h2 class="visible-xs">Menu</h2>
+	<button type="button" class="navbar-toggle" id="ep_menu_toggle" data-toggle="collapse" data-target="#ep_menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 	 <epc:pin ref="login_status" />
 	</div>
       </nav>

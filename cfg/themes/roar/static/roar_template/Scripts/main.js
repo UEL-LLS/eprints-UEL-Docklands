@@ -1,4 +1,9 @@
 j(document).ready(function () {
+
+	//menu manipluation
+	j('.ep_tm_menu_tools').removeClass('.ep_tm_key_tools').addClass('navbar-collapse collapse').attr('id','ep_menu');
+
+
         //stuff for the summary page
 
 	//add the + to the download panels
