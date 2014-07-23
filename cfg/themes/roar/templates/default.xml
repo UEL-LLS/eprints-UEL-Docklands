@@ -36,7 +36,7 @@
     <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/main.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/roar_template/Styles/search.css" rel="stylesheet" />
     <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/search.css" rel="stylesheet" />
-    <link href="{$config{rel_path}}/roar_template/Styles/fab.css" rel="stylesheet" />
+    <!--link href="{$config{rel_path}}/roar_template/Styles/fab.css" rel="stylesheet" /-->
     <!--link href="{$config{rel_path}}/roar_template/Styles/UEL.css" rel="stylesheet" />
     <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/UEL.css" rel="stylesheet" /-->
     <link href="{$config{rel_path}}/roar_template/Styles/recollect_overrides.css" rel="stylesheet" />
@@ -71,6 +71,8 @@
               <a class="navbar-brand" href="http://www.uel.ac.uk">UEL Home</a>
 	      <div class="visible-xs" id="header_icons">
 		<a href="{$config{http_url}}"><span class="visible-xs glyphicon glyphicon-home"></span></a>
+		<a href='{$config{http_cgiurl}}/users/home'><span class="visible-xs glyphicon glyphicon-user"></span></a>
+		<a href='{$config{http_cgiurl}}/users/home?screen=NewDeposit'><span class="visible-xs glyphicon glyphicon-plus"></span></a>
 	      </div>
               <h1 class="sr-only">
                 <epc:phrase ref="archive_name" />
