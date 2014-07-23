@@ -17,20 +17,22 @@ min-height: 21.1em
 
 .panel-docklands-fp.data .seemore {
 position: relative;
-top: -7em;
-width: 100%;
-text-align: center;
-background: rgba(255, 2555, 255, 0.8);
-font-size: 18px;
-height: 4em;
+float: right;
+top: -4em;
 padding-top: 1.2em;
+
+height: 4em;
+width: 8em;
+
+text-align: center;
+font-size: 18px;
+font-weight: 600;
+
+background-color: #FF8700;
 
 visibility: hidden;
 opacity:0;
 transition:visibility 0s linear 0.5s,opacity 0.5s linear;
-
-border-top: 1px solid #333;
-border-bottom: 1px solid #333;
 }
 .seemore a, .seemore a {
 text-decoration: none;
@@ -51,4 +53,8 @@ opacity: 0.8;
 .panel-docklands-fp .panel-img {
 height: 14em;
 overflow: hidden
+}
+
+.panel-docklands-fp.data .panel-img img {
+transition:visibility opacity 0.1s linear;
 }
