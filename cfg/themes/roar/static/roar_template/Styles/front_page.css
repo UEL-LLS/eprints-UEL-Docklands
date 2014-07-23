@@ -18,6 +18,7 @@ min-height: 23em
 .panel-docklands-fp.data .seemore {
 position: absolute;
 top: 9.3em;
+right: 0.85em;
 padding-top: 1.2em;
 
 height: 4em;
