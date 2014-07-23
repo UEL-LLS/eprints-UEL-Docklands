@@ -46,7 +46,7 @@ j(document).ready(function () {
 
 
 	//Turn the latest_tool into a nice list of divs
-	j('table.ep_latest_tool_list').replaceWith( j('table').html()
+/*	j('table.ep_latest_tool_list').replaceWith( j('table').html()
    		.replace(/<tbody/gi, "<ul class='list-unstyled' id='latest_tool'")
    		.replace(/<tr/gi, "<li")
    		.replace(/<\/tr>/gi, "</li>")
@@ -56,7 +56,7 @@ j(document).ready(function () {
 	);
 	j('.ep_search_result').addClass('panel panel-card row');
 	j('.ep_search_result span').css('padding-left','0');
-	
+*/	
 	//j('.panel-card').children('span').css('padding-left','0');
 	j('.panel-card span').css('padding-left','0');
         j('.panel-card > span:nth-child(1)').addClass('col-md-1');

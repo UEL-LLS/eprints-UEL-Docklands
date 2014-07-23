@@ -30,6 +30,8 @@
     <!-- ZeroClipboard -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.3/ZeroClipboard.min.js" />
 
+    <!-- foggy.js by nbartlomiej. MIT License. https://github.com/nbartlomiej/foggy -->
+    <script src="{$config{rel_path}}/roar_template/Scripts/jquery.foggy.min.js" />
 
     <!-- UEL styles -->
     <link href="{$config{rel_path}}/roar_template/Styles/main.css" rel="stylesheet" />
@@ -94,10 +96,9 @@
           </div> <!-- /.container-fluid -->
          </div> <!-- /#uel-navbar -->
 
-
          <nav class="collapse navbar-collapse" id="lowernav">
             <div class="logo-wrapper hidden-xs">
-                <a href="/"><img src="http://www.uel.ac.uk/wwwmedia/uel2014/img/uel-logo.png" /></a>
+                <a href="/"><img src="http://www.uel.ac.uk/wwwmedia/uel2014/img/uel-logo.png" data-pixelate="true" data-value="0.1"/></a>
             </div>
           <ul class="nav navbar-nav">
             <li><a href="{$config{http_url}}"><span class="dl-uppercase"><epc:phrase ref="archive_name"/></span> Home</a></li>
@@ -264,6 +265,7 @@ jQuery(function() {
 		}
 
 	}
+	j('.foggy').foggy();
 	</script>
 	<!--script src="{$config{rel_path}}/roar_template/Scripts/main.js" /-->
 	<script src="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Scripts/main.js" />
