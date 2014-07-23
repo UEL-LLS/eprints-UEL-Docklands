@@ -108,8 +108,7 @@
       </div> <!-- /#navbackground -->
 </header>
 <aside id="add_item" class="visible-md visible-lg">
-	<!--p class="prefab hidden-prefab">Add New Item</p>
-	<div id="add_item_show" class="fab fab-md"></div-->
+	<!--div id="add_item_show" class="fab fab-md"></div-->
 	<button id="add_item_show" type="button" class="btn btn-lg btn-docklands-prime pull_right" title="Add a new item">New Depost</button>
 	<div id="add_item_content" class="shadow border" style="width: 0;">
                 <h3>
@@ -157,7 +156,7 @@
     <div id="main_page" class="container-fluid">
       <nav class="col-md-2 col-sm-2 col-xs-12">
         <div class="shadow border">
-	 <h2 class="visible-xs">Menu</h2>
+	 <h2 class="visible-xs" style="margin-left: 30px">Menu</h2>
 	<button type="button" class="navbar-toggle" id="ep_menu_toggle" data-toggle="collapse" data-target="#ep_menu">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
