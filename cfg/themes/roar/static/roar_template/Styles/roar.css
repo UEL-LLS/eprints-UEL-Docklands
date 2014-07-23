@@ -121,7 +121,12 @@ color: #fff;
 
 
 #uel-navbackground {
-border-bottom: 2px solid #d9d9d9;
+//border-bottom: 2px solid #d9d9d9;
+border-bottom: 0px solid #d9d9d9;
+}
+header {
+margin-bottom: 2em;
+border-bottom: 1px solid #999999;
 }
 .navbar {
 font-size: 10px;
@@ -244,8 +249,14 @@ color: #fff
 background-color: #005e9f;
 color: #fff
 }
+
+.btn {
+border-radius: 0!important;
+}
+
 /************
-************/
+ Latest Page
+*************/
 
 ul#latest_tool {
 margin-top: 8em;

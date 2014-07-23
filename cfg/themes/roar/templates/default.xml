@@ -36,8 +36,8 @@
     <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/main.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/roar_template/Styles/search.css" rel="stylesheet" />
     <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/search.css" rel="stylesheet" />
-    <link href="{$config{rel_path}}/roar_template/Styles/UEL.css" rel="stylesheet" />
-    <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/UEL.css" rel="stylesheet" />
+    <!--link href="{$config{rel_path}}/roar_template/Styles/UEL.css" rel="stylesheet" />
+    <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/UEL.css" rel="stylesheet" /-->
     <link href="{$config{rel_path}}/roar_template/Styles/recollect_overrides.css" rel="stylesheet" />
     <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/recollect_overrides.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/roar_template/Styles/roar.css" rel="stylesheet" />
@@ -132,7 +132,6 @@
 	})
 </script>
 </aside>
-    <hr style="width:100%; margin-bottom: 10px; margin-top: 0;" />
     <div id="repo_search" class="container-fluid">
       <section>
         <h2 class="sr-only">Search the repository</h2>
