@@ -42,8 +42,8 @@ color: #333!important
 
 .panel-docklands-fp:hover .seemore {
 visibility:visible;
-opacity:1;
-transition-delay:0s;
+opacity:0.95;
+transition-delay:0.1s;
 }
 
 .panel-docklands-fp.data:hover .panel-img img {
