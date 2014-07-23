@@ -36,6 +36,7 @@
     <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/main.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/roar_template/Styles/search.css" rel="stylesheet" />
     <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/search.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/roar_template/Styles/fab.css" rel="stylesheet" />
     <!--link href="{$config{rel_path}}/roar_template/Styles/UEL.css" rel="stylesheet" />
     <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/UEL.css" rel="stylesheet" /-->
     <link href="{$config{rel_path}}/roar_template/Styles/recollect_overrides.css" rel="stylesheet" />
@@ -107,6 +108,8 @@
       </div> <!-- /#navbackground -->
 </header>
 <aside id="add_item" class="visible-md visible-lg">
+	<!--p class="prefab hidden-prefab">Add New Item</p>
+	<div id="add_item_show" class="fab fab-md"></div-->
 	<button id="add_item_show" type="button" class="btn btn-lg btn-docklands-prime pull_right" title="Add a new item">New Depost</button>
 	<div id="add_item_content" class="shadow border" style="width: 0;">
                 <h3>

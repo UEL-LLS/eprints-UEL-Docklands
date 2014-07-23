@@ -92,7 +92,7 @@ clear: both;
  Helpers
 ********/
 
-.hidden {display: position: absolute; left -9999px; top:-9999px}
+.hidden {display:none; position: absolute; left -9999px; top:-9999px}
 
 .well-dl {
 
