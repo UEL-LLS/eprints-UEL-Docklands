@@ -104,7 +104,7 @@
                 background-color: #<epc:phrase ref="docklands_colour_1"/>;
                 color: #fff;
         }
-        .btn-docklands-prime,.panel-docklands-fp .panel-heading,.panel-docklands-prime .panel-heading,.docklands-modal-header {
+        .btn-docklands-prime,.panel-docklands-fp .panel-heading,.panel-docklands-prime .panel-heading {
                 background-color: #<epc:phrase ref="docklands_colour_1"/>;
                 color: #fff;
                 border-radius: <epc:phrase ref="docklands_btn_radius"/>px!important;

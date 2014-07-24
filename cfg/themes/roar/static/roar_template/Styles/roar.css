@@ -5,6 +5,16 @@ body {
 font-size: 10px!important;
 }
 
+/********
+ Colours
+********/
+
+.roar-txt {color: #BF6500}
+.data-bg {background-color: #BF6500!important}
+.data-txt {color: #005e9f}
+.roar-bg {background-color: #005e9f!important}
+
+
 /*******
  Roboto
 ********/
