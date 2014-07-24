@@ -121,7 +121,7 @@
                 <!--p><epc:phrase ref="deposit"/></p-->
 		<form method="post" accept-charset="utf-8" action="http://roar.uel.ac.uk/cgi/users/home" enctype="multipart/form-data">
                         <input name="screen" id="screen" value="NewEPrint" type="hidden" />
-                        <input value="New Publication" name="_action_create" type="submit" title="Submit a new publication to ROAR" class="btn btn-docklands-prime" />
+                        <input value="New Publication" name="_action_create" type="submit" title="Submit a new publication to ROAR" class="btn btn-docklands-prime btn-docklands-roar" />
                 </form>
 		<form method="post" accept-charset="utf-8" action="http://w01.ueldrtest.da.ulcc.ac.uk/cgi/users/home" enctype="multipart/form-data">
 			<input name="screen" id="screen" value="NewEPrint" type="hidden" />

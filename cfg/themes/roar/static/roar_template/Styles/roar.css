@@ -223,7 +223,8 @@ text-transform: none;
 .panel-docklands-prime, .panel-docklands-fp {
 border-radius: 0!important;
 }
-.panel-docklands-prime .panel-body, .panel-docklands-fp > .panel-body {
+//.panel-docklands-prime .panel-body,
+.panel-docklands-fp > .panel-body {
 border-top: 1px solid #ddd!important
 }
 .panel-docklands-prime > .panel-heading, .panel-docklands-fp > .panel-heading {
@@ -239,20 +240,20 @@ color: #fff
 }
 
 .btn-docklands-data {
-background-color: #FF8700;
+background-color: #FF8700!important;
 color: #fff
 }
 .btn-docklands-data:hover {
-background-color: #BF6500;
+background-color: #BF6500!important;
 color: #fff
 }
 
 .btn-docklands-roar {
-background-color: #0094d5;
+background-color: #0094d5!important;
 color: #fff
 }
 .btn-docklands-roar:hover {
-background-color: #005e9f;
+background-color: #005e9f!important;
 color: #fff
 }
 
