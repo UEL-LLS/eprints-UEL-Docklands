@@ -69,7 +69,7 @@ j(document).ready(function () {
 	//var pathname = window.location.pathname;
 	var pathname = j(location).attr("href");
 	
-	if (pathname == "http://roartest.uel.ac.uk$" || pathname == "http://ueltest.da.ulcc.ac.uk$" || pathname == "http://roar.uel.ac.uk$")  { 
+	if (pathname.match("http://roartest.uel.ac.uk/$") || pathname.match("http://ueltest.da.ulcc.ac.uk/$") || pathname.match("http://roar.uel.ac.uk/$"))  { 
                 console.log("Roar: "+pathname);
 		j('.docklands-modal-header').addClass("data-bg");
 	}
