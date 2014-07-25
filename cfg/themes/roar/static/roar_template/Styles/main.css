@@ -72,7 +72,7 @@ border: none;
  Buttons  
 *********/
 
-button.btn:active {
+.btn:active {
 top: 1px;	
 position: relative
 }
