@@ -68,16 +68,16 @@ j(document).ready(function () {
 ************/
 	//var pathname = window.location.pathname;
 	var pathname = j(location).attr("href");
-	
 	//if (pathname.indexOf("http://roartestX.uel.ac.uk") || pathname.indexOf("http://ueltest.da.ulcc.ac.uk") || pathname.indexOf("http://roar.uel.ac.uk"))  { 
 	if (pathname.match(/(roar.uel|roartest.uel|ueltest.da.ulcc).ac.uk/g))  { 
                 console.log("Roar: "+pathname);
 		j('.docklands-modal-header').addClass("data-bg");
 	}
 	else {
-		j('.docklands-modal-header').addClass("roar-bg");
-                console.log("Data: " + pathname);
-
+		if (!j('.data-bg')[0]){
+			j('.docklands-modal-header').addClass("roar-bg");
+        	        console.log("Data: " + pathname);
+		}
 	}
 
 	
