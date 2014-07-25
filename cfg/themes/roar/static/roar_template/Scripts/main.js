@@ -70,5 +70,6 @@ if (window.top!=window.self)
         {
                 j('header, #repo_search, nav, #add_item,h1, footer, .modal-button').remove();
                 j('#page').children('.shadow').removeClass('shadow');
+                j('#page').removeClass('col-md-10 col-sm-10').addClass('col-md-12 col-sm-12');
 
         }
