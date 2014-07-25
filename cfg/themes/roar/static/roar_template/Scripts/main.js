@@ -63,25 +63,6 @@ j(document).ready(function () {
         j('.panel-card > span:nth-child(2)').addClass('col-md-8');
         j('.panel-card > span:nth-child(3)').addClass('col-md-3').attr('align','right');
 
-/************
- Modal Stuff
-************/
-	//var pathname = window.location.pathname;
-	var pathname = j(location).attr("href");
-	//if (pathname.indexOf("http://roartestX.uel.ac.uk") || pathname.indexOf("http://ueltest.da.ulcc.ac.uk") || pathname.indexOf("http://roar.uel.ac.uk"))  { 
-	if (pathname.match(/(roar.uel|roartest.uel|ueltest.da.ulcc).ac.uk/g))  { 
-		j('.docklands-modal-header').addClass("data-bg");
-                console.log("Roar: "+pathname);
-	}
-	else {
-		if (!j('.data-bg')[0]){
-			j('.docklands-modal-header').addClass("roar-bg");
-        	        console.log("Data: " + pathname);
-		}
-	}
-
-	
-
 });
 
 
