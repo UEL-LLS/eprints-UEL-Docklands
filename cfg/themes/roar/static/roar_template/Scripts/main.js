@@ -37,7 +37,7 @@ j(document).ready(function () {
 
 	//Turn the request a copy link into a button  & sort out View Details button from IRstats2
 	j('a:contains("Request a copy")').addClass('btn btn-docklands-prime');
-	j('#summary_statistics a:contains("View details")').addClass('btn btn-docklands-prime pull-right');
+	j('#summary_statistics a').addClass('btn btn-docklands-prime pull-right');
 
 
 	//Add form classes in Request a copy page
