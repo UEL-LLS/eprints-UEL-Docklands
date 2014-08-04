@@ -32,6 +32,17 @@ j(document).ready(function () {
 	var blister_bar = j('.ep_blister_bar');
 	blister_bar.addClass('form-group');
 
+	//Nice search swish. On active, the classes change. The transitions are done from the CSS. 
+	j('#search_box input').focus( function(){
+		j( this ).parent().removeClass('col-md-2').addClass('col-md-10');
+		j('#search_button').removeClass('hidden-lg hidden-md hidden-sm');
+	});
+	j('#search_box input').focusout( function(){
+		j( this ).parent().removeClass('col-md-10').addClass('col-md-2');
+		j('#search_button').addClass('hidden-lg hidden-md hidden-sm');
+	});
+
+
 
 	//menu manipluation
 	j('.ep_tm_key_tools').removeClass('ep_tm_key_tools').addClass('navbar-collapse collapse').attr('id','ep_menu');
