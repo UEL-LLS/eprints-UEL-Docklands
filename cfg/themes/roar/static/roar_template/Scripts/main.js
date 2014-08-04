@@ -22,6 +22,13 @@ j(document).ready(function () {
 		j(this).removeClass('ep_tab_selected').addClass('active');
 	});
 
+	//pretty buttons
+	var buttons_1 = j('.ep_action_list .ep_form_action_button, .ep_form_action_button, .ep_blister_node_selected, .ep_form_internal_button');
+	var buttons_2 = j('.ep_blister_node');
+	buttons_1.addClass('btn btn-docklands-prime').removeClass('ep_form_action_button');
+	buttons_2.addClass('btn btn-docklands').removeClass('ep_form_action_button');
+
+
 
 
 	//menu manipluation
