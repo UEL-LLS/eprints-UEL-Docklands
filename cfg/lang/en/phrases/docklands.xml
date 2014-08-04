@@ -31,7 +31,7 @@
                 j('#ep_tm_menu_tools, .ep_tm_key_tools').addClass('nav nav-pills nav-stacked');
 
 		//pretty tabs
-                var tabs = j('#ep_tabs_tabs, #ep_admin_tabs_tabs, #ep_workflow_views_tabs, #ep_eprint_view_tabs,#ep_eprint_views_tabs #_tabs');
+                var tabs = j('#ep_tabs_tabs, #ep_admin_tabs_tabs, #ep_workflow_views_tabs, #ep_eprint_view_tabs,#ep_eprint_views_tabs #_tabs, .ep_eprint_views_tabs');
                 //var selected_tabs = j('#ep_tabs_tabs .ep_tab_selected, #ep_admin_tabs_tabs .ep_tab_selected, #ep_workflow_views_tabs .ep_tab_selectedi, #_tabs .ep_tab_selected');
                 var selected_tabs = j('.ep_tab_selected');
                 var li_tabs = j('#ep_tabs_tabs li, #ep_admin_tabs_tabs li, #ep_workflow_views_tabs li, #ep_eprint_view_tabs li, #_tabs li');
@@ -41,6 +41,7 @@
                         li_tabs.removeClass('active');
                         j(this).removeClass('ep_tab_selected').addClass('active');
                 });
+		
 
                 //pretty buttons
                 var buttons_1 = j('.ep_action_list .ep_form_action_button, .ep_form_action_button, .ep_blister_node_selected, .ep_form_internal_button')
