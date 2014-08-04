@@ -4,15 +4,19 @@ var j = jQuery.noConflict();
 
 j(document).ready(function () {
 
-
+	/*************************
+	  General Bootstrap stuff
+	**************************/
 
         //left hand side menu. Addes the classes needed for bootstrap to style the menu 
 	j('#ep_tm_menu_tools, .ep_tm_key_tools').addClass('nav nav-pills nav-stacked');
+
 
 	//all the tabs that we want to change to bootstrap style
 	var tabs = j('#ep_tabs_tabs, #ep_admin_tabs_tabs, #ep_workflow_views_tabs, #ep_eprint_view_tabs,#ep_eprint_views_tabs #_tabs, .ep_eprint_views_tabs');
 	var selected_tabs = j('.ep_tab_selected');
 	var li_tabs = j('#ep_tabs_tabs li, #ep_admin_tabs_tabs li, #ep_workflow_views_tabs li, #ep_eprint_view_tabs li, #_tabs li');
+
         
 	//remove the eprint classes and add the bootstrap classes
 	tabs.removeClass('ep_tab_bar').addClass('nav nav-tabs');
@@ -22,15 +26,13 @@ j(document).ready(function () {
 		j(this).removeClass('ep_tab_selected').addClass('active');
 	});
 
+
 	//pretty buttons
 	var buttons_1 = j('.ep_action_list .ep_form_action_button, .ep_form_action_button, .ep_blister_node_selected, .ep_form_internal_button');
 	var buttons_2 = j('.ep_blister_node');
 	buttons_1.addClass('btn btn-docklands-prime').removeClass('ep_form_action_button');
 	buttons_2.addClass('btn btn-docklands').removeClass('ep_form_action_button');
 
-	//think this is just for the workflow stages, but might be for others. 
-	var blister_bar = j('.ep_blister_bar');
-	blister_bar.addClass('form-group');
 
 	//Nice search swish. On active, the classes change. The transitions are done from the CSS. 
 	j('#search_box input').focus( function(){
@@ -43,15 +45,43 @@ j(document).ready(function () {
 	});
 
 
+	//pretty forms. Just adds smore classes to make forms look nicer in bootstrap
+	var formbar = j('.ep_form_button_bar');
+	formbar.addClass('form-group').removeClass('ep_form_button_bar');
+	j('#theme_select_form input.btn').addClass('col-md-12');
+
+
+	//think this is just for the workflow stages, but might be for others. 
+        var blister_bar = j('.ep_blister_bar');
+        blister_bar.addClass('form-group');
+
+
+	//better tables. Cant really apply to all tables as this breaks stuff (eprints LOVES tables), so add tables to be styled by bootstart to the tables selector. 
+	var tables = j('table.ep_columns, #ep_phraseedit_table');
+	tables.addClass('table');
+
+	
+	//replacing EPrints alerts with standard bootstart alerts
+	j('.ep_msg_warning_content').addClass('bg-warning').removeClass('ep_msg_warning_content');
+	j('.ep_msg_error_content').addClass('bg-danger').removeClass('ep_msg_error_content');
+
+	
+	//Theme Descriptions. This is for the Docklands themes themselves. 
+	var desc = j('#theme_select option:selected').data('description');
+	j('#theme_description').html("<p>"+desc+"</p>");
+	//when the selected theme changes, update the description
+	j( "#theme_select" ).change(function() {
+		var desc = j('#theme_select option:selected').data('description');
+		j('#theme_description').html("<p>"+desc+"</p>");
+	});
+
 
 	//menu manipluation
 	j('.ep_tm_key_tools').removeClass('ep_tm_key_tools').addClass('navbar-collapse collapse').attr('id','ep_menu');
 
-
-        //stuff for the summary page
-
-	//add the + to the download panels
-	//j('.panel-collapse').parent('.panel').children('.panel-heading').children('.panel-title').children('a').append('<span class="glyphicon glyphicon-plus"></span>');
+	/***************************
+         Stuff for the summary page
+	****************************/
 
 	//replace the img icons with nice font awesome ones
 	j('.ep_doc_icon[src$="fileicons/application_msword.png"]').replaceWith('<i class="ep_doc_icon fa fa-file-word-o fa-5x"></i>');
