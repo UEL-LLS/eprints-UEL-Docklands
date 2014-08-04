@@ -9,16 +9,18 @@ j(document).ready(function () {
         //left hand side menu. Addes the classes needed for bootstrap to style the menu 
 	j('#ep_tm_menu_tools, .ep_tm_key_tools').addClass('nav nav-pills nav-stacked');
 
-                var tabs = j('#ep_tabs_tabs, #ep_admin_tabs_tabs, #ep_workflow_views_tabs, #ep_eprint_view_tabs,#ep_eprint_views_tabs #_tabs, .ep_eprint_views_tabs');
-                //var selected_tabs = j('#ep_tabs_tabs .ep_tab_selected, #ep_admin_tabs_tabs .ep_tab_selected, #ep_workflow_views_tabs .ep_tab_selectedi, #_tabs .ep_tab_selected');
-                var selected_tabs = j('.ep_tab_selected');
-                var li_tabs = j('#ep_tabs_tabs li, #ep_admin_tabs_tabs li, #ep_workflow_views_tabs li, #ep_eprint_view_tabs li, #_tabs li');
-                tabs.removeClass('ep_tab_bar').addClass('nav nav-tabs');
-                selected_tabs.addClass('active');
-                li_tabs.click(function() {
-                        li_tabs.removeClass('active');
-                        j(this).removeClass('ep_tab_selected').addClass('active');
-                });
+	//all the tabs that we want to change to bootstrap style
+	var tabs = j('#ep_tabs_tabs, #ep_admin_tabs_tabs, #ep_workflow_views_tabs, #ep_eprint_view_tabs,#ep_eprint_views_tabs #_tabs, .ep_eprint_views_tabs');
+	var selected_tabs = j('.ep_tab_selected');
+	var li_tabs = j('#ep_tabs_tabs li, #ep_admin_tabs_tabs li, #ep_workflow_views_tabs li, #ep_eprint_view_tabs li, #_tabs li');
+        
+	//remove the eprint classes and add the bootstrap classes
+	tabs.removeClass('ep_tab_bar').addClass('nav nav-tabs');
+	selected_tabs.addClass('active');
+	li_tabs.click(function() {
+		li_tabs.removeClass('active');
+		j(this).removeClass('ep_tab_selected').addClass('active');
+	});
 
 
 
