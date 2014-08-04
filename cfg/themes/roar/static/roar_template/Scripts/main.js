@@ -28,7 +28,9 @@ j(document).ready(function () {
 	buttons_1.addClass('btn btn-docklands-prime').removeClass('ep_form_action_button');
 	buttons_2.addClass('btn btn-docklands').removeClass('ep_form_action_button');
 
-
+	//think this is just for the workflow stages, but might be for others. 
+	var blister_bar = j('.ep_blister_bar');
+	blister_bar.addClass('form-group');
 
 
 	//menu manipluation
