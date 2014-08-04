@@ -253,10 +253,16 @@ height: 26px;
 }
 
 
-/******
- Other
-******/
+/********
+ Metrics
+********/
 
 .altmetric_error {
 display: none;
 }
+
+#summary_altmetric, #summary_altmetric a.btn {
+margin: 20px 0 60px 0;
+}
+
+
