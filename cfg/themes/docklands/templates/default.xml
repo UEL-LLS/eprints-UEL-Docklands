@@ -24,15 +24,15 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
 
     <!-- foggy.js by nbartlomiej. MIT License. https://github.com/nbartlomiej/foggy -->
-    <script src="{$config{rel_path}}/roar_template/Scripts/jquery.foggy.min.js" />
+    <script src="{$config{rel_path}}/docklands_template/Scripts/jquery.foggy.min.js" />
 
 
     <!-- UEL styles -->
     <link href="{$config{rel_path}}/docklands_template/Styles/main.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/docklands_template/Styles/search.css" rel="stylesheet" />
+    <link href="{$config{rel_path}}/docklands_template/Styles/newdeposit.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/docklands_template/Styles/recollect_overrides.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/docklands_template/Styles/docklands.css" rel="stylesheet" />
-    <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/docklands/static/docklands_template/Styles/docklands.css" rel="stylesheet" />
 
     <style type="text/css">
         <epc:phrase ref="initial_css"/>
@@ -87,10 +87,10 @@
           	 </ul>
 		</li>
                 <li><a href="{$config{http_url}}/view/divisions/">Browse by School</a></li>
-                <li><a href="http://roar.uel.ac.uk/view/creators/">Browse by Author</a></li>
+                <li><a href="{$config{http_url}}/view/creators/">Browse by Author</a></li>
               </ul>
 	      <aside id="add_item" class="visible-md visible-lg navbar-right">
-	        <form method="post" accept-charset="utf-8" action="http://roar.uel.ac.uk/cgi/users/home" enctype="multipart/form-data">
+	        <form method="post" accept-charset="utf-8" action="{$config{http_cgiurl}}/users/home" enctype="multipart/form-data">
                   <input name="screen" id="screen" value="NewEPrint" type="hidden" />
                   <input value="New Deposit" id="add_item_show" name="_action_create" type="submit" class="btn btn-docklands-prime pull_right" title="Add a new item to repository"/>
        		</form>

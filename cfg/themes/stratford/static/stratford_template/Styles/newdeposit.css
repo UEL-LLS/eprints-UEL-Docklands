@@ -1,0 +1,11 @@
+#add_item {
+
+position: relative;
+right: 0;
+top: 0.6em;
+width: auto;
+}
+#add_item p {
+display: inline-block;
+width: 22em;
+}
