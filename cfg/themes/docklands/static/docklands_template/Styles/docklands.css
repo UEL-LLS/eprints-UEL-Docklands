@@ -98,28 +98,12 @@ text-transform: none;
 
 position: absolute;
 right: 1em;
-top: 0.2em;
+top: 0.6em;
 width: auto;
-}
-#add_item_content {
-visibility: hidden;
-opacity: 0;
--webkit-transition: visibility 0.2s linear, opacity 0.5s linear;
--moz-transition: visibility 0.2s linear, opacity 0.5s linear;
--o-transition: visibility 0.2s linear, opacity 0.5s linear;
-transition: visibility 0.2s linear,opacity 0.5s linear;
-}
-#add_item_content h3 {
-font-size: 16px;
-display: inline-block;
-margin-left: 1em;
 }
 #add_item p {
 display: inline-block;
 width: 22em;
-}
-#add_item h3 {
-margin-top: 4px;
 }
 
 .frontpage-panel {

@@ -89,29 +89,12 @@
         </div>
         <!-- /#neutral-navbar -->
     </header>
-<aside id="add_item" class="visible-md visible-lg">
-        <!--div id="add_item_show" class="fab fab-md"></div-->
-        <button id="add_item_show" type="button" class="btn btn-lg btn-docklands-prime pull_right" title="Add a new item">New Depost</button>
-        <div id="add_item_content" class="shadow border" style="width: 0;">
-                <h3>
-                        <!--epc:phrase ref="deposit_h"/-->
-                        Add an Item:
-                </h3>
-                <!--p><epc:phrase ref="deposit"/></p-->
-                <form method="post" accept-charset="utf-8" action="http://roar.uel.ac.uk/cgi/users/home" enctype="multipart/form-data">
-                        <input name="screen" id="screen" value="NewEPrint" type="hidden" />
-                        <input value="New Publication" name="_action_create" type="submit" title="Submit a new publication to ROAR" class="btn btn-docklands-prime btn-docklands-roar" />
-                </form>
-        </div>
-<script>
-        jQuery('#add_item_show').click( function() {
-                jQuery('#add_item_content').addClass('display-div');
-                jQuery('#add_item_show').addClass('hidden');
-                jQuery('#add_item_show').parent().css('width','18em');
-                jQuery('#add_item_content').css('width','100%');
-        })
-</script>
-</aside>
+    <aside id="add_item" class="visible-md visible-lg">
+	<form method="post" accept-charset="utf-8" action="http://roar.uel.ac.uk/cgi/users/home" enctype="multipart/form-data">
+		<input name="screen" id="screen" value="NewEPrint" type="hidden" />
+		<input value="New Deposit" id="add_item_show" name="_action_create" type="submit" class="btn btn-docklands-prime pull_right" title="Add a new item to repository"/>
+	</form>
+    </aside>
     <div id="repo_search" class="container-fluid">
       <section>
         <h2 class="sr-only">Search the repository</h2>
