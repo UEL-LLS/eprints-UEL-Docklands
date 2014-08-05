@@ -1,3 +1,11 @@
 /************
   Theme CSS
 ************/
+
+.navbar {border-color: transparent}
+#neutral-nav {
+margin-bottom: 0px;
+border-bottom: 1px solid #eee!important;
+border-color: #eee;
+}
+nav.navbar {border-bottom: 2px solid #eee}

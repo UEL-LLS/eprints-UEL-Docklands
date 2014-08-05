@@ -13,17 +13,24 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" />
     <epc:pin ref="head" />
     <!-- Bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" />
+
+    <!-- try roboto?  -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Roboto+Condensed:400,700' rel='stylesheet' type='text/css' />
+
+    <!-- Font Awesome by Dave Gandy - http://fontawesome.io -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- foggy.js by nbartlomiej. MIT License. https://github.com/nbartlomiej/foggy -->
+    <script src="{$config{rel_path}}/roar_template/Scripts/jquery.foggy.min.js" />
 
     <!-- Docklands styles -->
     <link href="{$config{rel_path}}/neutral_template/Styles/main.css" rel="stylesheet" />
-    <!--link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/main.css" rel="stylesheet" /-->
     <link href="{$config{rel_path}}/neutral_template/Styles/search.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/neutral_template/Styles/recollect_overrides.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/neutral_template/Styles/neutral.css" rel="stylesheet" />
-    <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/neutral/static/neutral_template/Styles/neutral.css" rel="stylesheet" />
 
     <style type="text/css">
 	/* Style from phrases */
@@ -88,8 +95,11 @@
           <!-- /.container-fluid -->
         </div>
         <!-- /#neutral-navbar -->
+	<nav class="navbar navbar-default" >
+         <h2 class="sr-only">Internal Menu</h2>
+         <epc:pin ref="login_status" />
+      </nav>  
     </header>
-    <hr style="width:100%; margin-bottom: 10px; margin-top: 0;" />
     <div id="main_page" class="container-fluid">
       <main id="page" class="col-md-8 col-sm-8 col-xs-12">
         <div class="ep_tm_page_content shadow border">
@@ -99,12 +109,6 @@
           <epc:pin ref="page" />
         </div>
       </main>
-      <nav class="col-md-2 col-sm-2 col-xs-12">
-        <div class="shadow border">
-         <h2 class="sr-only">Menu</h2>
-         <epc:pin ref="login_status" />
-        </div>
-      </nav>	
       <footer>
         <div class="ep_tm_footer ep_noprint">
           <div class="ep_tm_eprints_logo">
@@ -116,6 +120,15 @@
         </div>
       </footer>
     </div>
+	<script src="{$config{rel_path}}/neutral_template/Scripts/ep_toolbox.js" />
+        <script src="{$config{rel_path}}/neutral_template/Scripts/search.js" />
+        <script src="{$config{rel_path}}/neutral_template/Scripts/tabs.js" />
+        <script src="{$config{rel_path}}/neutral_template/Scripts/forms.js" />
+        <script src="{$config{rel_path}}/neutral_template/Scripts/buttons.js" />
+        <script src="{$config{rel_path}}/neutral_template/Scripts/tables.js" />
+        <script src="{$config{rel_path}}/neutral_template/Scripts/alerts.js" />
+        <script src="{$config{rel_path}}/neutral_template/Scripts/blisterbar.js" />
+        <script src="{$config{rel_path}}/neutral_template/Scripts/nav-menu.js" />
 	<script>
 	      <epc:phrase ref="docklands_script" />
 	</script>
