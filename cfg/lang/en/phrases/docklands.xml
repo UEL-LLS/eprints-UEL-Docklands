@@ -28,57 +28,6 @@
 <epp:phrase id="docklands_script">
         var j = jQuery.noConflict();
         j( document ).ready(function() {
-                j('#ep_tm_menu_tools, .ep_tm_key_tools').addClass('nav nav-pills nav-stacked');
-
-		//pretty tabs
-                var tabs = j('#ep_tabs_tabs, #ep_admin_tabs_tabs, #ep_workflow_views_tabs, #ep_eprint_view_tabs,#ep_eprint_views_tabs #_tabs, .ep_eprint_views_tabs');
-                //var selected_tabs = j('#ep_tabs_tabs .ep_tab_selected, #ep_admin_tabs_tabs .ep_tab_selected, #ep_workflow_views_tabs .ep_tab_selectedi, #_tabs .ep_tab_selected');
-                var selected_tabs = j('.ep_tab_selected');
-                var li_tabs = j('#ep_tabs_tabs li, #ep_admin_tabs_tabs li, #ep_workflow_views_tabs li, #ep_eprint_view_tabs li, #_tabs li');
-                tabs.removeClass('ep_tab_bar').addClass('nav nav-tabs');
-                selected_tabs.addClass('active');
-                li_tabs.click(function() {
-                        li_tabs.removeClass('active');
-                        j(this).removeClass('ep_tab_selected').addClass('active');
-                });
-		
-
-                //pretty buttons
-                var buttons_1 = j('.ep_action_list .ep_form_action_button, .ep_form_action_button, .ep_blister_node_selected, .ep_form_internal_button')
-                var buttons_2 = j('.ep_blister_node')
-                buttons_1.addClass('btn btn-docklands-prime').removeClass('ep_form_action_button');
-                buttons_2.addClass('btn btn-docklands').removeClass('ep_form_action_button');
-
-		var blister_bar = j('.ep_blister_bar');
-		blister_bar.addClass('form-group');
-
-		//j('input[value="Cancel"]').addClass('btn-danger').removeClass('btn-docklands-prime');		
-		//j('input[value="Save and Return"]').addClass('btn-success').removeClass('btn-docklands-prime');		
-
-		//nice seearch swish
-		j('#search_box input').focus( function(){
-			j( this ).parent().removeClass('col-md-2').addClass('col-md-10');
-			j('#search_button').removeClass('hidden-lg hidden-md hidden-sm');
-		});
-		j('#search_box input').focusout( function(){
-			j( this ).parent().removeClass('col-md-10').addClass('col-md-2');
-			j('#search_button').addClass('hidden-lg hidden-md hidden-sm');
-		});
-
-
-                //pretty forms
-		var formbar = j('.ep_form_button_bar');
-                formbar.addClass('form-group').removeClass('ep_form_button_bar');
-                j('#theme_select_form input.btn').addClass('col-md-12');
-
-		//better tables
-		var tables = j('table.ep_columns, #ep_phraseedit_table');
-		tables.addClass('table');
-		
-		//replacing EPrints alerts
-		j('.ep_msg_warning_content').addClass('bg-warning').removeClass('ep_msg_warning_content');
-		j('.ep_msg_error_content').addClass('bg-danger').removeClass('ep_msg_error_content');
-		
 
                 //Theme Descriptions
                 var desc = j('#theme_select option:selected').data('description');
@@ -88,9 +37,6 @@
                         j('#theme_description').html("<p>"+desc+"</p>");
 
                 });
-
-		//j("#toptenAJAX").load("");
-
         });
 </epp:phrase>
 
