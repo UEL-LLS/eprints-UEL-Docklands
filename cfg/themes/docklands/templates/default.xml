@@ -29,9 +29,7 @@
 
     <!-- UEL styles -->
     <link href="{$config{rel_path}}/docklands_template/Styles/main.css" rel="stylesheet" />
-    <link href="{$config{rel_path}}/docklands_template/Styles/webfonts.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/docklands_template/Styles/search.css" rel="stylesheet" />
-    <link href="{$config{rel_path}}/docklands_template/Styles/UEL.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/docklands_template/Styles/recollect_overrides.css" rel="stylesheet" />
     <link href="{$config{rel_path}}/docklands_template/Styles/docklands.css" rel="stylesheet" />
     <link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/docklands/static/docklands_template/Styles/docklands.css" rel="stylesheet" />
