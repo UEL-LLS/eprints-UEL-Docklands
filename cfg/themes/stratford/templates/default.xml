@@ -87,15 +87,15 @@
         </div>
       </footer>
     </div>
-	<script src="{$config{rel_path}}/docklands_template/Scripts/ep_toolbox.js" />
-        <script src="{$config{rel_path}}/docklands_template/Scripts/search.js" />
-        <script src="{$config{rel_path}}/docklands_template/Scripts/tabs.js" />
-        <script src="{$config{rel_path}}/docklands_template/Scripts/forms.js" />
-        <script src="{$config{rel_path}}/docklands_template/Scripts/buttons.js" />
-        <script src="{$config{rel_path}}/docklands_template/Scripts/tables.js" />
-        <script src="{$config{rel_path}}/docklands_template/Scripts/alerts.js" />
-        <script src="{$config{rel_path}}/docklands_template/Scripts/menu.js" />
-        <script src="{$config{rel_path}}/docklands_template/Scripts/blisterbar.js" />
+	<script src="{$config{rel_path}}/stratford_template/Scripts/ep_toolbox.js" />
+        <script src="{$config{rel_path}}/stratford_template/Scripts/search.js" />
+        <script src="{$config{rel_path}}/stratford_template/Scripts/tabs.js" />
+        <script src="{$config{rel_path}}/stratford_template/Scripts/forms.js" />
+        <script src="{$config{rel_path}}/stratford_template/Scripts/buttons.js" />
+        <script src="{$config{rel_path}}/stratford_template/Scripts/tables.js" />
+        <script src="{$config{rel_path}}/stratford_template/Scripts/alerts.js" />
+        <script src="{$config{rel_path}}/stratford_template/Scripts/menu.js" />
+        <script src="{$config{rel_path}}/stratford_template/Scripts/blisterbar.js" />
 	<script>
 	      <epc:phrase ref="docklands_script" />
 	</script>
