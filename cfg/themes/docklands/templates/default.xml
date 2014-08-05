@@ -89,6 +89,29 @@
         </div>
         <!-- /#neutral-navbar -->
     </header>
+<aside id="add_item" class="visible-md visible-lg">
+        <!--div id="add_item_show" class="fab fab-md"></div-->
+        <button id="add_item_show" type="button" class="btn btn-lg btn-docklands-prime pull_right" title="Add a new item">New Depost</button>
+        <div id="add_item_content" class="shadow border" style="width: 0;">
+                <h3>
+                        <!--epc:phrase ref="deposit_h"/-->
+                        Add an Item:
+                </h3>
+                <!--p><epc:phrase ref="deposit"/></p-->
+                <form method="post" accept-charset="utf-8" action="http://roar.uel.ac.uk/cgi/users/home" enctype="multipart/form-data">
+                        <input name="screen" id="screen" value="NewEPrint" type="hidden" />
+                        <input value="New Publication" name="_action_create" type="submit" title="Submit a new publication to ROAR" class="btn btn-docklands-prime btn-docklands-roar" />
+                </form>
+        </div>
+<script>
+        jQuery('#add_item_show').click( function() {
+                jQuery('#add_item_content').addClass('display-div');
+                jQuery('#add_item_show').addClass('hidden');
+                jQuery('#add_item_show').parent().css('width','18em');
+                jQuery('#add_item_content').css('width','100%');
+        })
+</script>
+</aside>
     <div id="repo_search" class="container-fluid">
       <section>
         <h2 class="sr-only">Search the repository</h2>
@@ -115,7 +138,7 @@
 	 <epc:pin ref="login_status" />
 	</div>
       </nav>
-      <main id="page" class="col-md-8 col-sm-8 col-xs-12">
+      <main id="page" class="col-md-9 col-sm-9 col-xs-12">
         <div class="ep_tm_page_content shadow border">
           <h1 class="ep_tm_pagetitle">
             <epc:pin ref="title" />
@@ -123,23 +146,6 @@
           <epc:pin ref="page" />
         </div>
       </main>
-      <aside class="col-md-2 col-sm-2 hidden-xs">
-	<div id="addnow" class="shadow border">
-		<h3>
-			<epc:phrase ref="deposit_h"/>
-		</h3>
-		<p><epc:phrase ref="deposit"/></p>
-		<form method="post" accept-charset="utf-8" action="/cgi/users/home" enctype="multipart/form-data"><input name="screen" id="screen" value="NewEPrint" type="hidden" /><input value="New Item" name="_action_create" type="submit" class="btn btn-docklands" /></form>
-	</div><br />
-	<div id="sidebar" class="shadow border">
-		<h3>Sidebar</h3>
-		<epc:phrase ref="about_repo" />
-	</div>
-	<br />
-	<div id="sidebar_top10" class="shadow border">
-		<h3>Top 10</h3>
-	</div>
-      </aside>
 	
       <footer>
         <div class="ep_tm_footer ep_noprint">
@@ -152,7 +158,9 @@
         </div>
       </footer>
     </div>
+	<script src="{$config{rel_path}}/docklands_template/Scripts/ep_toolbox.js" />
 	<script>
+
       <epc:phrase ref="docklands_script" />
 	</script>
   </body>

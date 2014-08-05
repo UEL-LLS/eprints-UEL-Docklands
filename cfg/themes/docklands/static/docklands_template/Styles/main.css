@@ -9,18 +9,21 @@
 body {
 font-family: Arial, Helvetica, sans-serif;
 line-height: 20px;
-color: #050505
+color: #050505;
 }
 
 .ep_summary_box_title, .ep_summary_box_body, .ep_sr_title_bar, .ep_sr_content, .ep_sr_collapse_bar, .ep_tab_panel, .ep_toolbox_content, .ep_upload_doc, .ep_search_buttons, .ep_search_controls, .ep_search_controls_bottom, .ep_view_group_by {
 background-color: #fff;
 }
 
-#main_page > nav, #main_page > main {margin-bottom: 1em}
+#main_page > main, #main_page > nav {margin-bottom: 0em}
+@media screen and (min-width:768px){
+#main_page > main, #main_page > nav {margin-bottom: 4em}
+}
 
 #main_page {font-size: 14px}
 
-#main_title {margin-left: -15px}
+#main_title {margin-left: -15px;margin-bottom: 3em;}
 
 .ep_tm_key_tools li {border: none!important}
 
@@ -43,10 +46,15 @@ position: relative;
 left:-5px;
 display: inline-block;
 text-align: center;
+text-align: left;
 vertical-align: middle;
 border: 1px solid transparent;
 padding: 6px 12px;
 line-height: 1.42857143;
+color: #fff
+}
+
+#page h1 a {
 color: #fff
 }
 
@@ -57,8 +65,52 @@ box-shadow: -10px 0px 10px -7px rgba(0,0,0,0.5);
 padding-left: 1em
 }
 
+.ep_summary_box_title {
+border: none;
+}
+/********
+ Buttons  
+*********/
+
+.btn:active {
+top: 1px;	
+position: relative
+}
+
+/*******
+ Footer 
+*******/
+.docklands_footer {
+font-size: 80%;
+border-top-width: 2px;
+border-top-style: solid;
+padding: 1em 0 0 0;
+clear: both;
+}
+
 /*******
  Helpers
 ********/
 
-.hidden {display: position: absolute; left -9999px; top:-9999px}
+.hidden {display:none; position: absolute; left -9999px; top:-9999px}
+
+.well-dl {
+
+border: 1px solid #aaa;
+padding: 5px;
+background: #ddd;
+text-align: center;
+border-radius: 0px;
+
+}
+
+#summary_citation .well-dl {
+padding-right:3.2em;
+}
+
+.display-div {
+opacity:1!important;
+transition-delay:0s!important;
+visibility: visible!important;
+width: 100%;
+}
