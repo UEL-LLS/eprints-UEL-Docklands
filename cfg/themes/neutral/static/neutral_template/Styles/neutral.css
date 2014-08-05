@@ -9,3 +9,19 @@ border-bottom: 1px solid #eee!important;
 border-color: #eee;
 }
 nav.navbar {border-bottom: 2px solid #eee}
+
+/***********
+ Menu stuff
+***********/
+
+header .navbar-toggle {
+border-color: #777!important;
+}
+
+#ep_menu_toggle {
+top: -5rem;
+}
+
+header span.icon-bar {
+background-color: #777!important;
+}

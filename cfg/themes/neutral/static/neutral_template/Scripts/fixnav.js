@@ -7,7 +7,7 @@ var j = jQuery.noConflict();
 j(document).ready(function () {
 
                 j(window).scroll(function() {
-                        if (j(this).scrollTop() > 51) {
+                        if (j(this).scrollTop() > 51 && j(window).width() > 750) {
                         	j('#ep_internal_nav').addClass('navbar-fixed-top').css("opacity","0.95");
 			}else {
                         	j('#ep_internal_nav').removeClass('navbar-fixed-top').css("opacity","1");

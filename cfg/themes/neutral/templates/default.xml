@@ -96,7 +96,13 @@
         </div>
         <!-- /#neutral-navbar -->
 	<nav class="navbar navbar-default" id="ep_internal_nav" >
-         <h2 class="sr-only">Internal Menu</h2>
+         <h2 class="visible-xs" style="margin-left: 30px">Internal Menu</h2>
+	<button type="button" class="navbar-toggle" id="ep_menu_toggle" data-toggle="collapse" data-target="#ep_menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
          <epc:pin ref="login_status" />
         </nav>
     </header>
@@ -129,6 +135,7 @@
         <script src="{$config{rel_path}}/neutral_template/Scripts/alerts.js" />
         <script src="{$config{rel_path}}/neutral_template/Scripts/blisterbar.js" />
         <script src="{$config{rel_path}}/neutral_template/Scripts/nav-menu.js" />
+        <script src="{$config{rel_path}}/neutral_template/Scripts/menu.js" />
         <script src="{$config{rel_path}}/neutral_template/Scripts/fixnav.js" />
 	<script>
 	      <epc:phrase ref="docklands_script" />
