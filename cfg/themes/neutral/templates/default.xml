@@ -101,7 +101,7 @@
       </nav>  
     </header>
     <div id="main_page" class="container-fluid">
-      <main id="page" class="col-md-8 col-sm-8 col-xs-12">
+      <main id="page" class="col-md-12 col-sm-12 col-xs-12">
         <div class="ep_tm_page_content shadow border">
           <h1 class="ep_tm_pagetitle">
             <epc:pin ref="title" />
