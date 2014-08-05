@@ -121,7 +121,7 @@
 	 <epc:pin ref="login_status" />
 	</div>
       </nav>
-      <main id="page" class="col-md-9 col-sm-9 col-xs-12">
+      <main id="page" class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
         <div class="ep_tm_page_content shadow border">
           <h1 class="ep_tm_pagetitle">
             <epc:pin ref="title" />
