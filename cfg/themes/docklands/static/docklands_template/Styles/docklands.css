@@ -96,8 +96,8 @@ text-transform: none;
 
 #add_item {
 
-position: absolute;
-right: 1em;
+position: relative;
+right: 0;
 top: 0.6em;
 width: auto;
 }
@@ -112,10 +112,6 @@ margin: 2em 1em;
 
 /***************
  Left hand Menu
-***************/
-
-/***************
- Left hand menu
 ***************/
 
 #ep_menu_toggle {
