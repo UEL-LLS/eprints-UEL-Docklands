@@ -416,7 +416,7 @@ sub render_row
 	if ($type eq "colours"){
 		# Colour picker html5 thing
 		my $colour = $session->make_text( $string );
-		my $colourBlock = $session->make_element( "div", style=>"display: inline-block; width: 10px;height:10px;background-color:#$colour" );
+		my $colourBlock = $session->make_element( "div", style=>"display: inline-block; width: 1em;height:1em;margin-right:1em;background-color:#$colour" );
 		$td->appendChild( $colourBlock );
 	}
 	
