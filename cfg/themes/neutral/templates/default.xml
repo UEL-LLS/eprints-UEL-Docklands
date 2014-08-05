@@ -95,10 +95,10 @@
           <!-- /.container-fluid -->
         </div>
         <!-- /#neutral-navbar -->
-	<nav class="navbar navbar-default" >
+	<nav class="navbar navbar-default" id="ep_internal_nav" >
          <h2 class="sr-only">Internal Menu</h2>
          <epc:pin ref="login_status" />
-      </nav>  
+        </nav>
     </header>
     <div id="main_page" class="container-fluid">
       <main id="page" class="col-md-12 col-sm-12 col-xs-12">
@@ -129,6 +129,7 @@
         <script src="{$config{rel_path}}/neutral_template/Scripts/alerts.js" />
         <script src="{$config{rel_path}}/neutral_template/Scripts/blisterbar.js" />
         <script src="{$config{rel_path}}/neutral_template/Scripts/nav-menu.js" />
+        <script src="{$config{rel_path}}/neutral_template/Scripts/fixnav.js" />
 	<script>
 	      <epc:phrase ref="docklands_script" />
 	</script>
