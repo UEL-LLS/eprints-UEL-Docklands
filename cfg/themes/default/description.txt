@@ -1,1 +1,1 @@
-This is the default eprints theme
+This is the default eprints theme. No changes from standard.

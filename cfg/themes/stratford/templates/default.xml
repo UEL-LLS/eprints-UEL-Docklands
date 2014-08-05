@@ -40,7 +40,59 @@
   <body>
     <epc:pin ref="pagetop" />
     <header>
-<epc:phrase ref="neutral_header"/>
+    <div id="neutral-nav" class="navbar navbar-default borderbottom " role="navigation">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar" />
+                <span class="icon-bar" />
+                <span class="icon-bar" />
+              </button>
+                <a href="{$config{frontpage}}" title="{phrase('archive_name')}" class="navbar-brand">
+                        <img style="height: 30px" alt="{phrase('archive_name')}" src="{$config{rel_path}}{$config{site_logo}}"/>
+                </a>
+                <!--a href="{$config{frontpage}}" title="{phrase('archive_name')}" class="navbar-brand"><epc:phrase ref="archive_name"/></a-->
+              <h1 class="sr-only">
+                <epc:phrase ref="archive_name" />
+              </h1>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- /.navbar-collapse #topnav-->
+            <div class="collapse navbar-collapse" id="mainnav" >
+              <ul class="nav navbar-nav">
+                <li><a href="{$config{frontpage}}"><epc:phrase ref="template/navigation:home" /></a></li>
+                <li><a href="{$config{http_url}}/information.html"><epc:phrase ref="template/navigation:about" /></a></li>
+                <li class="dropdown displayblock"><a href="#" data-toggle="dropdown" ><epc:phrase ref="template/navigation:browse" /> <b class="caret"/></a>
+                 <ul class="dropdown-menu">
+                        <li><a href="{$config{http_url}}/view/year/">
+                                <epc:phrase ref="bin/generate_views:indextitleprefix"/>
+                                <epc:phrase ref="viewname_eprint_year"/>
+                        </a></li>
+                        <li><a href="{$config{http_url}}/view/subjects/">
+                                <epc:phrase ref="bin/generate_views:indextitleprefix"/>
+                                <epc:phrase ref="viewname_eprint_subjects"/>
+                        </a></li>
+                        <li><a href="{$config{http_url}}/view/divisions/">
+                                <epc:phrase ref="bin/generate_views:indextitleprefix"/>
+                                <epc:phrase ref="viewname_eprint_divisions"/>
+                        </a></li>
+                        <li><a href="{$config{http_url}}/view/creators/">
+                                <epc:phrase ref="bin/generate_views:indextitleprefix"/>
+                                <epc:phrase ref="viewname_eprint_creators"/>
+                        </a></li>
+                 </ul>
+                </li>
+                <li><a href="{$config{http_url}}/view/divisions/">Browse by School</a></li>
+                <li><a href="http://roar.uel.ac.uk/view/creators/">Browse by Author</a></li>
+              </ul>
+            </div>
+            <!-- /#mainnav -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- /#neutral-navbar -->
     </header>
     <div id="repo_search" class="container-fluid">
       <section>

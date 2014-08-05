@@ -89,19 +89,25 @@
                 <li><a href="{$config{http_url}}/view/divisions/">Browse by School</a></li>
                 <li><a href="http://roar.uel.ac.uk/view/creators/">Browse by Author</a></li>
               </ul>
+	      <aside id="add_item" class="visible-md visible-lg nav-right">
+	        <form method="post" accept-charset="utf-8" action="http://roar.uel.ac.uk/cgi/users/home" enctype="multipart/form-data">
+                  <input name="screen" id="screen" value="NewEPrint" type="hidden" />
+                  <input value="New Deposit" id="add_item_show" name="_action_create" type="submit" class="btn btn-docklands-prime pull_right" title="Add a new item to repository"/>
+       		</form>
+    	      </aside>
             </div>
             <!-- /#mainnav -->
           </div>
           <!-- /.container-fluid -->
         </div>
         <!-- /#neutral-navbar -->
-    </header>
     <aside id="add_item" class="visible-md visible-lg">
 	<form method="post" accept-charset="utf-8" action="http://roar.uel.ac.uk/cgi/users/home" enctype="multipart/form-data">
 		<input name="screen" id="screen" value="NewEPrint" type="hidden" />
 		<input value="New Deposit" id="add_item_show" name="_action_create" type="submit" class="btn btn-docklands-prime pull_right" title="Add a new item to repository"/>
 	</form>
     </aside>
+    </header>
     <div id="repo_search" class="container-fluid">
       <section>
         <h2 class="sr-only">Search the repository</h2>
