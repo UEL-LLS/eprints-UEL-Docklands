@@ -110,7 +110,7 @@
 <aside id="add_item" class="visible-md visible-lg">
 	<!--div id="add_item_show" class="fab fab-md"></div-->
 	<button id="add_item_show" type="button" class="btn btn-lg btn-docklands-prime pull_right" title="Add a new item">New Depost</button>
-	<div id="add_item_content" class="shadow border" style="width: 0;">
+	<div id="add_item_content" class="shadowX border" style="width: 0;">
                 <h3>
                         <!--epc:phrase ref="deposit_h"/-->
 			Add an Item:
@@ -126,7 +126,7 @@
 		</form>
 	</div>
 <script>
-	jQuery('#add_item_show').click( function() {
+	jQuery('#add_item_show').hover( function() {
 		jQuery('#add_item_content').addClass('display-div');
 		jQuery('#add_item_show').addClass('hidden');
 		jQuery('#add_item_show').parent().css('width','25em');
