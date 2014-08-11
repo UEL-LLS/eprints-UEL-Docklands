@@ -155,7 +155,7 @@
         </div>
       </footer>
     </div>
-	<script src="{$config{rel_path}}/docklands_template/Scripts/ep_toolbox.js" />
+<!--	<script src="{$config{rel_path}}/docklands_template/Scripts/ep_toolbox.js" />
 	<script src="{$config{rel_path}}/docklands_template/Scripts/search.js" />
 	<script src="{$config{rel_path}}/docklands_template/Scripts/tabs.js" />
 	<script src="{$config{rel_path}}/docklands_template/Scripts/forms.js" />
@@ -165,6 +165,17 @@
 	<script src="{$config{rel_path}}/docklands_template/Scripts/menu.js" />
 	<script src="{$config{rel_path}}/docklands_template/Scripts/blisterbar.js" />
 	<script src="{$config{rel_path}}/docklands_template/Scripts/workflow.js" />
+    -->    
+        <script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/alerts.js" />
+        <script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/blisterbar.js" />
+        <script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/buttons.js" />
+	<script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/ep_toolbox.js" />
+        <script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/forms.js" />
+	<script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/menu.js" />
+	<script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/search.js" />
+        <script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/tables.js" />
+        <script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/tabs.js" />
+        <script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/workflow.js" />
 	<script>
 
       <epc:phrase ref="docklands_script" />
