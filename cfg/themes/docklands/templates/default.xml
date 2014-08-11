@@ -164,6 +164,7 @@
 	<script src="{$config{rel_path}}/docklands_template/Scripts/alerts.js" />
 	<script src="{$config{rel_path}}/docklands_template/Scripts/menu.js" />
 	<script src="{$config{rel_path}}/docklands_template/Scripts/blisterbar.js" />
+	<script src="{$config{rel_path}}/docklands_template/Scripts/workflow.js" />
 	<script>
 
       <epc:phrase ref="docklands_script" />
