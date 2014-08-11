@@ -1,0 +1,3 @@
+[submodule "cfg/themes/docklands/static/docklands_template/Scripts/eprint-jquery-scripts"]
+	path = cfg/themes/docklands/static/docklands_template/Scripts/eprint-jquery-scripts
+	url = https://github.com/UEL-LLS/eprints-jquery-scripts.git
