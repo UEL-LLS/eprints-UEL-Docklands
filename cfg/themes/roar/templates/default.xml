@@ -119,7 +119,7 @@
               </a>
 	    </li>
             <!--li><a href="{$config{http_url}}/view/" menu="ep_tm_menu"><epc:phrase ref="template/navigation:browse" /></a></li-->
-	    <li><a href="{$config{http_url}}/help_deposit.html">Help Deposit</a></li>
+	    <!--li><a href="{$config{http_url}}/help_deposit.html">Help Deposit</a></li-->
           </ul>
          </nav> <!-- /#lowernav -->
       </div> <!-- /#navbackground -->
