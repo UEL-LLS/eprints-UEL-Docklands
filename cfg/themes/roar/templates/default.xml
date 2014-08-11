@@ -100,9 +100,26 @@
           <ul class="nav navbar-nav">
             <li><a href="{$config{http_url}}"><span class="dl-uppercase"><epc:phrase ref="archive_name"/></span> Home</a></li>
             <li><a href="{$config{http_url}}/information.html"><epc:phrase ref="template/navigation:about" /></a></li>
-            <li><a href="{$config{http_url}}/view/" menu="ep_tm_menu"><epc:phrase ref="template/navigation:browse" /></a></li>
-            <li><a href="{$config{http_url}}/view/divisions/">Browse by School</a></li>
-            <li><a href="{$config{http_url}}/view/creators/">Browse by Author</a></li>
+            <li>
+    	      <a href="{$config{http_url}}/view/year/">
+                <epc:phrase ref="bin/generate_views:indextitleprefix"/>
+                <epc:phrase ref="viewname_eprint_year"/>
+              </a>
+	    </li>
+            <li>
+	      <a href="{$config{http_url}}/view/creators/">
+                <epc:phrase ref="bin/generate_views:indextitleprefix"/>
+                <epc:phrase ref="viewname_eprint_creators"/>
+              </a>
+	    </li>
+            <li>
+	      <a href="{$config{http_url}}/view/divisions/">
+                <epc:phrase ref="bin/generate_views:indextitleprefix"/>
+                <epc:phrase ref="viewname_eprint_divisions"/>
+              </a>
+	    </li>
+            <!--li><a href="{$config{http_url}}/view/" menu="ep_tm_menu"><epc:phrase ref="template/navigation:browse" /></a></li-->
+	    <li><a href="{$config{http_url}}/help_deposit.html">Help Deposit</a></li>
           </ul>
          </nav> <!-- /#lowernav -->
       </div> <!-- /#navbackground -->
