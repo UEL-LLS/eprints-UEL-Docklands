@@ -11,6 +11,7 @@
     <link rel="icon" href="{$config{rel_path}}/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="{$config{rel_path}}/favicon.ico" type="image/x-icon" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" />
+
     <epc:pin ref="head" />
     <!-- Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no" />
@@ -277,7 +278,7 @@ jQuery(function() {
 		}
 
 	}
-	j('.foggy').foggy();
+	//j('.foggy').foggy();
 	/*j('main').mouseover(function () {
 		j('main').fadeTo().foggy(false);
 	});
@@ -287,6 +288,7 @@ jQuery(function() {
 	</script>
 	<script src="{$config{rel_path}}/roar_template/Scripts/main.js" />
 	<script src="{$config{rel_path}}/roar_template/Scripts/menu.js" />
+	
 	<!--script src="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Scripts/main.js" /-->
   </body>
 </html>

@@ -89,12 +89,12 @@
                 <li><a href="{$config{http_url}}/view/divisions/">Browse by School</a></li>
                 <li><a href="{$config{http_url}}/view/creators/">Browse by Author</a></li>
               </ul>
-	      <aside id="add_item" class="visible-md visible-lg navbar-right">
+	      <!--aside id="add_item" class="visible-md visible-lg navbar-right">
 	        <form method="post" accept-charset="utf-8" action="{$config{http_cgiurl}}/users/home" enctype="multipart/form-data">
                   <input name="screen" id="screen" value="NewEPrint" type="hidden" />
                   <input value="New Deposit" id="add_item_show" name="_action_create" type="submit" class="btn btn-docklands-prime pull_right" title="Add a new item to repository"/>
        		</form>
-    	      </aside>
+    	      </aside-->
             </div>
             <!-- /#mainnav -->
           </div>
@@ -171,11 +171,12 @@
         <script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/buttons.js" />
 	<script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/ep_toolbox.js" />
         <script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/forms.js" />
-	<script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/menu.js" />
 	<script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/search.js" />
+	<script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/stacked-menu.js" />
         <script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/tables.js" />
         <script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/tabs.js" />
         <script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/workflow.js" />
+        <script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/addnew.js" />
 	<script>
 
       <epc:phrase ref="docklands_script" />
