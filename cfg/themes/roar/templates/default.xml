@@ -125,33 +125,6 @@
          </nav> <!-- /#lowernav -->
       </div> <!-- /#navbackground -->
 </header>
-<aside id="add_item" class="visible-md visible-lg">
-	<!--div id="add_item_show" class="fab fab-md"></div-->
-	<button id="add_item_show" type="button" class="btn btn-lg btn-docklands-prime pull_right" title="Add a new item">New Depost</button>
-	<div id="add_item_content" class="shadowX border" style="width: 0;">
-                <h3>
-                        <!--epc:phrase ref="deposit_h"/-->
-			Add an Item:
-                </h3>
-                <!--p><epc:phrase ref="deposit"/></p-->
-		<form method="post" accept-charset="utf-8" action="http://roar.uel.ac.uk/cgi/users/home" enctype="multipart/form-data">
-                        <input name="screen" id="screen" value="NewEPrint" type="hidden" />
-                        <input value="New Publication" name="_action_create" type="submit" title="Submit a new publication to ROAR" class="btn btn-docklands-prime btn-docklands-roar" />
-                </form>
-		<form method="post" accept-charset="utf-8" action="http://w01.ueldrtest.da.ulcc.ac.uk/cgi/users/home" enctype="multipart/form-data">
-			<input name="screen" id="screen" value="NewEPrint" type="hidden" />
-			<input value="New Dataset" name="_action_create" type="submit" title="Submit a new dataset to DATA.uel" class="btn btn-docklands-data" />
-		</form>
-	</div>
-<script>
-	jQuery('#add_item_show').hover( function() {
-		jQuery('#add_item_content').addClass('display-div');
-		jQuery('#add_item_show').addClass('hidden');
-		jQuery('#add_item_show').parent().css('width','25em');
-		jQuery('#add_item_content').css('width','100%');
-	})
-</script>
-</aside>
     <div id="repo_search" class="container-fluid">
       <section>
         <h2 class="sr-only">Search the repository</h2>
@@ -288,7 +261,8 @@ jQuery(function() {
 	</script>
 	<script src="{$config{rel_path}}/roar_template/Scripts/main.js" />
 	<script src="{$config{rel_path}}/roar_template/Scripts/menu.js" />
-	
+	<!--script src="{$config{rel_path}}/roar_template/Scripts/roar-addnew.js" /-->
+        <script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/roar-addnew.js" />	
 	<!--script src="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Scripts/main.js" /-->
   </body>
 </html>
