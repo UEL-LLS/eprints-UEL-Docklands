@@ -183,17 +183,6 @@
 				<abbr title="Email">E:</abbr> <a href="mailto:r.o.a.r(at)uel.ac.uk">r.o.a.r(at)uel.ac.uk</a>
 			</address>
 	   	</div>
-		<div class="col-md-offset-1 col-md-5">
-			<address>
-                                <strong>Research Data Services</strong><br />
-                                Docklands Library<br />
-                                University of East London<br />
-                                University Way<br />
-                                London, E16 2RD<br />
-                                United Kingdom<br />
-                                <abbr title="Email">E:</abbr> <a href="mailto:researchdata(at)uel.ac.uk">researchdata(at)uel.ac.uk</a>
-                        </address>
-		</div>
 	  </div>
  <script>
 jQuery(function() {
@@ -261,8 +250,8 @@ jQuery(function() {
 	</script>
 	<script src="{$config{rel_path}}/roar_template/Scripts/main.js" />
 	<script src="{$config{rel_path}}/roar_template/Scripts/menu.js" />
-	<!--script src="{$config{rel_path}}/roar_template/Scripts/roar-addnew.js" /-->
-        <script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/roar-addnew.js" />	
+	<script src="{$config{rel_path}}/roar_template/Scripts/eprints-jquery-scripts/roar-addnew.js" />
+        <!--script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/roar-addnew.js" /-->	
 	<!--script src="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Scripts/main.js" /-->
   </body>
 </html>

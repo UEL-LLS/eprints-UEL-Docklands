@@ -4,3 +4,6 @@
 [submodule "cfg/themes/docklands/static/docklands_template/Scripts/eprints-jquery-scripts"]
 	path = cfg/themes/docklands/static/docklands_template/Scripts/eprints-jquery-scripts
 	url = https://github.com/UEL-LLS/eprints-jquery-scripts.git
+[submodule "cfg/themes/roar/static/roar_template/Scripts/eprints-jquery-scripts"]
+	path = cfg/themes/roar/static/roar_template/Scripts/eprints-jquery-scripts
+	url = https://github.com/UEL-LLS/eprints-jquery-scripts.git
