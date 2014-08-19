@@ -1,3 +1,11 @@
 /************
   Theme CSS
 ************/
+
+.navbar-header .brand {
+background: url("http://www.uel.ac.uk/wwwmedia/uelwebsite/styleassets/images/sprites_secondary.png") no-repeat -150px -48px;
+background-size: 273px 410px;
+width: 144px;
+}
+
+
