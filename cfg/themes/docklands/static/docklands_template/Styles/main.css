@@ -89,6 +89,12 @@ clear: both;
 }
 
 /*******
+ Alerts
+*******/
+
+#ep_messages { clear: both }
+
+/*******
  Helpers
 ********/
 
