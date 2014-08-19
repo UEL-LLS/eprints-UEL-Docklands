@@ -13,10 +13,9 @@ This package also works with my Cookies package allowing you to theme the cookie
 -----
 Change Log:
 
-0.2.9
+0.4 Many changes. Biggest being the use of https://github.com/UEL-LLS/eprints-jquery-scripts
 
-Switched to Bootstrap 3.2.0
-
+0.2.9 Switched to Bootstrap 3.2.0
 
 0.2.8 Updates for Data.uel to use main.js for iframe 
 
