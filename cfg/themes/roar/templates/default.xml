@@ -251,6 +251,7 @@ jQuery(function() {
 	<script src="{$config{rel_path}}/roar_template/Scripts/main.js" />
 	<script src="{$config{rel_path}}/roar_template/Scripts/menu.js" />
 	<script src="{$config{rel_path}}/roar_template/Scripts/eprints-jquery-scripts/roar-addnew.js" />
+	<script src="{$config{rel_path}}/roar_template/Scripts/eprints-jquery-scripts/workflow.js" />
         <!--script src="https://rawgit.com/UEL-LLS/eprints-jquery-scripts/master/roar-addnew.js" /-->	
 	<!--script src="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Scripts/main.js" /-->
   </body>
