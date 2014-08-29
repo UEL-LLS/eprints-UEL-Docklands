@@ -136,6 +136,7 @@ sub action_update_theme
 
 END
 	my $conf2 = '$c->{theme} ="'.$theme.'"'.';';
+	#my $conf3 = '$c->{googleanalytics} = "'.$ga.'"'.';"';  #Bring Google Analytics into the themes
 
 	my $conf = join "", $conf1, $conf2;
 	#print $conf;
