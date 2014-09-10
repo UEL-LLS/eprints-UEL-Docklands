@@ -160,7 +160,8 @@ padding-left: 10px;
 }
 
 .panel-body i, .ep_doc_icon {
-float: right;
+//float: right;
+margin-left: 25%;
 }
 
 #summary_links .panel-body p {
