@@ -99,7 +99,7 @@
                 <a href="/"><img src="http://www.uel.ac.uk/wwwmedia/uel2014/img/uel-logo.png" data-pixelate="true" data-value="0.1"/></a>
             </div>
           <ul class="nav navbar-nav">
-            <li><a href="{$config{http_url}}"><span class="dl-uppercase"><epc:phrase ref="archive_name"/></span> Home</a></li>
+            <li><a href="{$config{http_url}}"><span class="text-lowercase"><epc:phrase ref="archive_name"/></span> Home</a></li>
             <li><a href="{$config{http_url}}/information.html"><epc:phrase ref="template/navigation:about" /></a></li>
             <li>
     	      <a href="{$config{http_url}}/view/year/">
