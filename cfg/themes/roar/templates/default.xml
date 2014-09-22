@@ -29,7 +29,7 @@
     <!--script src="https://rawgit.com/kswedberg/jquery-expander/master/jquery.expander.min.js" /-->
 
     <!-- ZeroClipboard -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.3/ZeroClipboard.min.js" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.6/ZeroClipboard.min.js" />
 
     <!-- foggy.js by nbartlomiej. MIT License. https://github.com/nbartlomiej/foggy -->
     <script src="{$config{rel_path}}/roar_template/Scripts/jquery.foggy.min.js" />
