@@ -210,9 +210,15 @@ color: #fff;
 background: #0094d5;
 color: #fff
 }
-.data-modal-header, .btn-data-color {{
+.data-modal-header, .btn-data-color {
 background: #FF8700;
 color: #fff;
+}
+.btn-roar-color:hover {
+background-color: #005e9f
+}
+.btn-data-color:hover {
+background-color: #BF6500
 }
 
 
