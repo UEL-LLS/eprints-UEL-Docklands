@@ -206,6 +206,17 @@ border: none;
 background: #FF8700;
 color: #fff;
 }
+.roar-modal-header, .btn-roar-color {
+background: #0094d5;
+color: #fff
+}
+.data-modal-header, .btn-data-color {{
+background: #FF8700;
+color: #fff;
+}
+
+
+
 
 #summary_links a.btn, #summary_links a.btn:visited {
 color: #fff
