@@ -147,6 +147,10 @@ j(document).ready(function () {
 	j('.panel table.table th').css('border','none');
 	j('.panel table.table td.ep_form_input_grid_arrows').css('border-bottom','1px solid #ddd');
 
+
+	//Make the modals display the correct colours
+	j('a:contains("Open in ROAR")').addClass('btn-roar-color');
+	j('a:contains("Open in Data.uel")').addClass('btn-data-color');
 });
 
 
