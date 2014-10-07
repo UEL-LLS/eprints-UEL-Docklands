@@ -89,6 +89,10 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="glyphsize"><span class="glyphicon glyphicon-earphone"></span></li>
                 <li class="no-hover"><a href="tel:+44 (0)20 8223 3000">+44 (0)20 8223 3333</a></li>
+		  <li><i class="fa fa-facebook-square fa-3x"></i></li>
+		  <li><i class="fa fa-youtube-square fa-3x"></i></li>
+		  <li><i class="fa fa-twitter-square fa-3x"></i></li>
+		  <li><i class="fa fa-google-plus fa-3x"></i></li>
               </ul>
             </nav> <!-- /.navbar-collapse #topnav-->
           </div> <!-- /.container-fluid -->
