@@ -252,7 +252,7 @@ text-align: center;
 font-size: 16px;
 }
 
-#topnav > ul > li.active > a, #topnav > ul > li:hover > a, .navbar-header a:hover, .navbar-right li.header-icons:hover {
+#topnav > ul > li.active > a, #topnav > ul > li:hover > a, .navbar-header a:hover, .social-icons-container li a:hover {
 background: #003471;
 color: white;
 }
