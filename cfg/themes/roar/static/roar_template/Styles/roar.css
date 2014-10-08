@@ -109,39 +109,6 @@ color: #fff;
  Social Icons
 ************/
 
-/*
-.header-icons{
-padding: 0 0 0 5px;
-height: 40px;
-width: 30px
-}
-.header-icons a {
-background-color: #fff;
-margin: 6px 20px 0 0;
-color: #0094d5!important;
-border-radius: 15px;
-width: 26px;
-height: 26px!important;
-padding: 0px!important;
-font-size: 10px!important;
-}
-i.fa.fa-facebook {
-padding: 5px 7px;
-}
-i.fa.fa-youtube-play {
-padding: 5px 4px;
-}
-i.fa.fa-twitter {
-padding: 5px 4px;
-}
-i.fa.fa-google-plus {
-padding: 5px 5px;
-}
-.navbar-right li i.fa {
-font-size: 1.8em!important
-}
-*/
-
 .social-icons-container ul {
 list-style: none;
 padding: 0;
@@ -166,7 +133,6 @@ display: inline-block;
 }
 
 .uelicon {
-//background: url('http://www.uel.ac.uk/wwwmedia/uel2014/img/imgsprite.png') no-repeat;
 background: url('http://roartest.uel.ac.uk/roar_template/Images/uelicons.png') no-repeat;
 width: 26px;
 height: 39px;
