@@ -80,19 +80,23 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <nav class="collapse navbar-collapse" id="topnav">
-              <ul class="nav navbar-nav">
+              <ul class="nav navbar-nav navbar-left">
                 <li><a href="http://www.uel.ac.uk/staff/">Staff</a></li>
                 <li><a href="http://www.uel.ac.uk/students/">Students</a></li>
                 <li><a href="http://www.uel.ac.uk/contactus/">Contact Us</a></li>
                 <!--li class="active"><a href="{$config{http_url}}">ROAR</a></li-->
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li class="glyphsize"><span class="glyphicon glyphicon-earphone"></span></li>
-                <li class="no-hover"><a href="tel:+44 (0)20 8223 3000">+44 (0)20 8223 3333</a></li>
-		  <li class="header-icons"><a><i class="fa fa-facebook"></i></a></li>
-		  <li class="header-icons"><a><i class="fa fa-youtube-play"></i></a></li>
-		  <li class="header-icons"><i class="fa fa-twitter"></i></li>
-		  <li class="header-icons"><i class="fa fa-google-plus"></i></li>
+                <!--li class="glyphsize"><span class="glyphicon glyphicon-earphone"></span></li>
+                <li class="no-hover"><a href="tel:+44 (0)20 8223 3000">+44 (0)20 8223 3333</a></li-->
+		<li class="social-icons-container">
+		<ul>
+		  <li class="Xheader-icons"><a href="http://www.facebook.com/"><i class="uelicon icon-fb"></i></a></li>
+		  <li class="Xheader-icons"><a href="http://www.facebook.com/"><i class="uelicon icon-yt"></i></a></li>
+		  <li class="Xheader-icons"><a href="http://www.facebook.com/"><i class="uelicon icon-tw"></i></a></li>
+		  <li class="Xheader-icons"><a href="http://www.facebook.com/"><i class="uelicon icon-gp"></i></a></li>
+		</ul>
+		</li>
               </ul>
             </nav> <!-- /.navbar-collapse #topnav-->
           </div> <!-- /.container-fluid -->
