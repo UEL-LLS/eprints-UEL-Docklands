@@ -166,7 +166,8 @@ display: inline-block;
 }
 
 .uelicon {
-background: url('http://www.uel.ac.uk/wwwmedia/uel2014/img/imgsprite.png') no-repeat;
+//background: url('http://www.uel.ac.uk/wwwmedia/uel2014/img/imgsprite.png') no-repeat;
+background: url('http://roartest.uel.ac.uk/roar_template/Images/uelicons.png') no-repeat;
 width: 26px;
 height: 39px;
 display: inline-block;
