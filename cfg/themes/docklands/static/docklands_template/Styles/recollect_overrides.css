@@ -6,3 +6,8 @@ box-shadow: none;
 border: none;
 padding: 0;
 }
+
+.ep_summary_content_main p .person_name {	
+font-size:100%;
+
+}
