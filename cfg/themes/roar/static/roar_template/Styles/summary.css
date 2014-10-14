@@ -159,7 +159,7 @@ padding-left: 10px;
 	float: right;
 }
 
-.panel-body i, .ep_doc_icon {
+.panel-body i, .panel-body .ep_doc_icon {
 //float: right;
 margin-left: 25%;
 }
