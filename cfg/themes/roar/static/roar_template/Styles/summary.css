@@ -207,11 +207,11 @@ background: #FF8700;
 color: #fff;
 }
 .roar-modal-header, .btn-roar-color {
-background: #0094d5;
+background: #0094d5!important;
 color: #fff
 }
 .data-modal-header, .btn-data-color {
-background: #FF8700;
+background: #FF8700!important;
 color: #fff;
 }
 .btn-roar-color:hover {
