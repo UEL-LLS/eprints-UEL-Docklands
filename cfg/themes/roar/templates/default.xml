@@ -107,7 +107,8 @@
                 <a href="/"><img src="http://roartest.uel.ac.uk/roar_template/Images/uellogo.png" /></a>
             </div>
           <ul class="nav navbar-nav">
-            <li><a href="{$config{http_url}}"><span class="text-lowercase"><epc:phrase ref="archive_name"/></span> Home</a></li>
+            <li><a href="{$config{http_url}}"><span class="text-lowercase"><epc:phrase ref="archive_name"/></span></a></li>
+	    <li><a href="{phrase('template/navigation:otherRepoURL')}"><epc:phrase ref="template/navigation:otherRepoName" /></a></li>
             <li><a href="{$config{http_url}}/information.html"><epc:phrase ref="template/navigation:about" /></a></li>
             <li>
     	      <a href="{$config{http_url}}/view/year/">

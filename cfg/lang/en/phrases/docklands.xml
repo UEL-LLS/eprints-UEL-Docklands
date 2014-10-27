@@ -135,4 +135,7 @@
         <!-- /#neutral-navbar -->
 </epp:phrase>
 
+<epp:phrase id="template/navigation:otherRepoName">data.uel</epp:phrase>
+<epp:phrase id="template/navigation:otherRepoURL">http://data.uel.ac.uk</epp:phrase>
+
 </epp:phrases>
