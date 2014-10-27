@@ -178,7 +178,8 @@
 	
       <footer class="row">
         <div class="docklands_footer ep_noprint">
-	  <div class="col-md-4"><div class="row">
+	  <div class="col-md-4">
+	   <div class="row">
          	<div class="col-md-12"><h4>Contact:</h4></div>
 	   	<div class="col-md-5">
 			<address>
@@ -196,7 +197,18 @@
 			ROAR: <a href="http://www.twitter.com/ROARuel">@ROARuel</a>
 			Reaserch Data: <a href="http://www.twitter.com/RDM_uel">@RDM_uel</a>
                 </div>
-	  </div></div>
+	   </div>
+	  </div>
+	  <div class="col-md-2">
+	   <div class="row">
+		<div class="col-md-12"><h4>UEL General Enquiries:</h4></div>
+		<div class="col-md-10">
+			T: <a href="tel:+442082233000">+44 (0)20 8223 3000</a><br /> 
+			Monday-Friday, 8.30am-5.30pm
+		</div>
+	   </div>	
+
+	  </div>
  <script>
 jQuery(function() {
  jQuery('footer a[href^="mailto:"]').each(function() {
@@ -206,7 +218,7 @@ jQuery(function() {
  });
 });
 </script>
-	  <div class="col-md-offset-4 col-md-3">
+	  <div class="col-md-offset-2 col-md-3">
 		<h4>EPrints Software:</h4>
 			<a href="http://eprints.org/software/">
               			<img alt="EPrints Logo" src="{$config{rel_path}}/images/eprintslogo.gif" />
