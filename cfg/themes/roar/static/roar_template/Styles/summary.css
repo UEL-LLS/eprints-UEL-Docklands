@@ -206,21 +206,38 @@ border: none;
 background: #FF8700;
 color: #fff;
 }
-.roar-modal-header, .btn-roar-color {
+
+.panel-colour-data {
+}
+.panel-colour-roar {
+}
+.panel-colour-external {
+}
+
+.panel-colour-roar > .panel-heading, .panel-colour-roar .btn-docklands-prime {
 background: #0094d5!important;
 color: #fff
 }
-.data-modal-header, .btn-data-color {
+.panel-colour-data > .panel-heading, .panel-colour-data .btn-docklands-prime {
 background: #FF8700!important;
 color: #fff;
 }
-.btn-roar-color:hover {
-background-color: #005e9f
-}
-.btn-data-color:hover {
-background-color: #BF6500
+
+.panel-colour-external > .panel-heading, .panel-colour-external .btn-docklands-prime { 
+background: #666!important;
+color: #fff;
+
 }
 
+.panel-colour-roar .btn-docklands-prime:hover {
+background-color: #005e9f
+}
+.panel-colour-data .btn-docklands-prime:hover {
+background-color: #BF6500
+}
+.panel-colour-external .btn-docklands-prime:hover {
+background-color: #444
+}
 
 
 
