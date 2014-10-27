@@ -207,35 +207,35 @@ background: #FF8700;
 color: #fff;
 }
 
-.panel-colour-data {
+.panel-data {
 }
-.panel-colour-roar {
+.panel-roar {
 }
-.panel-colour-external {
+.panel-external {
 }
 
-.panel-colour-roar > .panel-heading, .panel-colour-roar .btn-docklands-prime {
+.panel-roar > .panel-heading, .panel-roar .btn-docklands-prime {
 background: #0094d5!important;
 color: #fff
 }
-.panel-colour-data > .panel-heading, .panel-colour-data .btn-docklands-prime {
+.panel-data > .panel-heading, .panel-data .btn-docklands-prime {
 background: #FF8700!important;
 color: #fff;
 }
 
-.panel-colour-external > .panel-heading, .panel-colour-external .btn-docklands-prime { 
+.panel-external > .panel-heading, .panel-external .btn-docklands-prime { 
 background: #666!important;
 color: #fff;
 
 }
 
-.panel-colour-roar .btn-docklands-prime:hover {
+.panel-roar .btn-docklands-prime:hover {
 background-color: #005e9f
 }
-.panel-colour-data .btn-docklands-prime:hover {
+.panel-data .btn-docklands-prime:hover {
 background-color: #BF6500
 }
-.panel-colour-external .btn-docklands-prime:hover {
+.panel-external .btn-docklands-prime:hover {
 background-color: #444
 }
 
