@@ -179,7 +179,8 @@ display: inline-block;
 }
 #summary_links .panel-title > a > span , #summary_downloads .panel-title > a > span {
 position: relative;
-left: 7%;
+//left: 7%;
+right: -5%;
 }
 
 /******
