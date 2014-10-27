@@ -230,13 +230,13 @@ color: #fff;
 }
 
 .panel-roar .btn-docklands-prime:hover {
-background-color: #005e9f
+background-color: #005e9f!important
 }
 .panel-data .btn-docklands-prime:hover {
-background-color: #BF6500
+background-color: #BF6500!important
 }
 .panel-external .btn-docklands-prime:hover {
-background-color: #444
+background-color: #444!important
 }
 
 
