@@ -9,6 +9,23 @@ font-size: 10px!important;
  Colours
 ********/
 
+/*
+Paletton.com colour Scheme:
+http://paletton.com/#uid=43r1p0k++MKuJZiOu+P++v7+Lpg
+
+ROAR prime: 		#0095D5
+ROAR secondary: 	#00597F
+DATA prime:		#FF8700
+DATA secondary:		#C96A00
+Project prime:  	#B800D8
+Project secondary:	#700084
+
+External Links p:	#666
+External Links s:	#444
+
+*/
+
+
 .roar-txt {color: #BF6500}
 .data-bg {background-color: #BF6500!important}
 .data-txt {color: #005e9f}
