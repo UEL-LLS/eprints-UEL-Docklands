@@ -47,6 +47,8 @@
     <!--link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/summary.css" rel="stylesheet" /-->
     <link href="{$config{rel_path}}/roar_template/Styles/front_page.css" rel="stylesheet" />
     <!--link href="https://rawgit.com/UEL-LLS/eprints-UEL-Docklands/master/cfg/themes/roar/static/roar_template/Styles/front_page.css" rel="stylesheet" /-->
+
+    <meta name="theme-color" content="#{phrase('docklands_colour_1')}" />
     
     <style type="text/css">
         <epc:phrase ref="initial_css"/>
